@@ -1,0 +1,18 @@
+plugin.tx_sglayerslider {
+	view {
+		# cat=plugin.tx_sglayerslider/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:sg_layerslider/Resources/Private/Templates/
+		# cat=plugin.tx_sglayerslider/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:sg_layerslider/Resources/Private/Partials/
+		# cat=plugin.tx_sglayerslider/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:sg_layerslider/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_sglayerslider//a; type=string; label=Default storage PID
+		storagePid =
+	}
+	config {
+	    #cat=plugin.tx_sglayerslider/file; type=string; label=Path to Slider directory
+	    directory =
+	}
+}

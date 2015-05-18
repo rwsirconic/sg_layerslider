@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_sglayerslider_domain_model_slider">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_slider.title">
+				<source>Titel des Sliders</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_slider.description">
+				<source>Beschreibung des Sliders</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_slider.layers">
+				<source>Layer des Sliders</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_sglayerslider_domain_model_layer">
+				<source>Layer innerhalb eines Sliders</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.title">
+				<source>Titel des Elements</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.slidedelay">
+				<source>Slidezeit</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.transition2d">
+				<source>2D-Effekt</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.transition3d">
+				<source>3D-Effekt</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.timeshift">
+				<source>Zeitverzögerung</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.deeplink">
+				<source>Link-Ziel</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.elements">
+				<source>Elemente des Layers</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_sglayerslider_domain_model_element">
+				<source>Element eines Layers</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.title">
+				<source>Element-Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.elementtext">
+				<source>Element-Text</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.image">
+				<source>Element-Bild</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.borderleft">
+				<source>Rand links</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.bordertop">
+				<source>Rand oben</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.elementhight">
+				<source>Höhe des Elements</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.textcolor">
+				<source>Schriftfarbe</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.slidedirin">
+				<source>Effektrichtung einblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.slidedirout">
+				<source>Effektrichtung ausblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.durationin">
+				<source>Effektdauer einblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.durationout">
+				<source>Effektdauer ausblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.delayin">
+				<source>Verzögerung einblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.delayout">
+				<source>Verzögerung ausblenden</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

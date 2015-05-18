@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_sglayerslider_domain_model_slider">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_slider.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_slider.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.slidedirout">
+				<source>Slidedirout</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_slider.layers">
+				<source>Layers</source>
+			</trans-unit>
+
+			<trans-unit id="tx_sglayerslider_domain_model_layer">
+				<source>Layer</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.slidedelay">
+				<source>Anzeigezeit</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.timeshift">
+				<source>Zeitverschiebung</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.transition2d">
+				<source>2D-Effekt</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.transition3d">
+				<source>3D-Effekt</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.deeplink">
+				<source>Deeplink-Name</source>
+			</trans-unit>
+
+			<trans-unit id="tx_sglayerslider_domain_model_layer.extlink">
+				<source>Linkziel des Slides</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.elements">
+				<source>Elements</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.bgimage">
+				<source>Hintergrund-Bild</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.thumbnail">
+				<source>Thumbnail-Bild</source>
+			</trans-unit>
+
+			<trans-unit id="tx_sglayerslider_domain_model_element">
+				<source>Element</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.elementtext">
+				<source>Elementtext</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.borderleft">
+				<source>Borderleft</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.bordertop">
+				<source>Bordertop</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.elementhight">
+				<source>Elementhight</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.textcolor">
+				<source>Textcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.showuntil">
+				<source>Haltezeit nach Effekt (ms)</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.slidedirout">
+				<source>Slidedirout</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.durationin">
+				<source>Einblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.durationout">
+				<source>Ausblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.delayin">
+				<source>Verzögerung (ms)</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.delayout">
+				<source>Delayout</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.medialink">
+				<source>Media-Link</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.mediatype">
+				<source>Linktyp Media</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.mediatype">
+				<source>Linktyp Media</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.parallax">
+				<source>Parallaxen-Ebene</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.effekt">
+				<source>Effekt</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.parallax">
+				<source>Parallaxe</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.border">
+				<source>Border X,Y</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.media">
+				<source>Eingebettete Medien</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.duration">
+				<source>Laufzeit (ms)</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.textcol">
+				<source>Layertext</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.offset">
+				<source>Offset (left, right, top, bottom, num)</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.easing">
+				<source>Beschleunigung/Abbremsen</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.sliderdir">
+				<source>Slider-Richtung</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.fadeing">
+				<source>Überblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.rotate">
+				<source>Rotation</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.scaling">
+				<source>Skalierung</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.skewing">
+				<source>Verzerrung</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.transform">
+				<source>Transformations-Ursprung (%/px) x y z</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.offsetxin">
+				<source>Einblenden X</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.offsetyin">
+				<source>Einblenden Y</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.offsetxout">
+				<source>Ausblenden X</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.offsetyout">
+				<source>Ausblenden Y</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.transformin">
+				<source>Einblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.transformout">
+				<source>Ausblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.fadein">
+				<source>Einblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.fadeout">
+				<source>Ausblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.rotatein">
+				<source>Rotation In</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.rotateout">
+				<source>Rotation Out</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.rotatexin">
+				<source>Rotation X In</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.rotatexout">
+				<source>Rotation X Out</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.rotateyin">
+				<source>Rotation Y In</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.rotateyout">
+				<source>Rotation Y Out</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.scalexin">
+				<source>Skalierung X In</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.scalexout">
+				<source>Skalierung X Out</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.scaleyin">
+				<source>Skalierung Y In</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.scaleyout">
+				<source>Skalierung X Out</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.skewxin">
+				<source>Verzerren X In</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.skewxout">
+				<source>Verzerren X Out</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.skewyin">
+				<source>Verzerren Y In</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.skewyout">
+				<source>Verzerren X Out</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easingin">
+				<source>Einblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easingout">
+				<source>Ausblenden</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.linear">
+				<source>linear</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInSine">
+				<source>easeInSine</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutSine">
+				<source>easeOutSine</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutSine">
+				<source>easeInSine</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInQuad">
+				<source>easeInQuad</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutQuad">
+				<source>easeOutQuad</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutQuad">
+				<source>easeInOutQuad</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInQubic">
+				<source>easeInQubic</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutQubic">
+				<source>easeOutQubic</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutQubic">
+				<source>easeInOutQubic</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInQuart">
+				<source>easeInQuart</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutQuart">
+				<source>easeOutQuart</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutQuart">
+				<source>easeInOutQuart</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInQuint">
+				<source>easeInQuint</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutQuint">
+				<source>easeOutQuint</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutQuint">
+				<source>easInOutQuint</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInExpo">
+				<source>easeInExpo</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutExpo">
+				<source>easeOutExpo</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutExpo">
+				<source>easeInOutExpo</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInCirc">
+				<source>easeInCirc</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutCirc">
+				<source>easeOutCirc</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutCirc">
+				<source>easeInOutCirc</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInBack">
+				<source>easeInBack</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutBack">
+				<source>easeOutBack</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutBack">
+				<source>easeInOutBack</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInElastic">
+				<source>easeInElastic</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutElasitc">
+				<source>easeOutElastic</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutElastic">
+				<source>easeInOutElastic</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInBounce">
+				<source>easeInBounce</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutBounce">
+				<source>easeOutBounce</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutBounce">
+				<source>easeInOutBounce</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

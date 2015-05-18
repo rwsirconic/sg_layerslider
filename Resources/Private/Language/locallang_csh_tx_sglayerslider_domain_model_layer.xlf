@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider">
+		<header/>
+		<body>
+
+			<trans-unit id="title.description">
+				<source>Titel des Elements</source>
+			</trans-unit>
+			<trans-unit id="transition2d.description">
+				<source>2D-Effekte</source>
+			</trans-unit>
+			<trans-unit id="transition3d.description">
+				<source>3D-Effekte</source>
+			</trans-unit>
+			<trans-unit id="deeplink.description">
+				<source>Linkziel</source>
+			</trans-unit>
+			<trans-unit id="timeshift.description">
+				<source>Verzögerung</source>
+			</trans-unit>
+	    	<trans-unit id="slidedelay.description">
+				<source>Anzeigedauer</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

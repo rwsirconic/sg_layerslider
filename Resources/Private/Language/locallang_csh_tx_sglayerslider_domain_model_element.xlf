@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider">
+		<header/>
+		<body>
+
+			<trans-unit id="title.description">
+				<source>Element-Titel</source>
+			</trans-unit>
+			<trans-unit id="elementtext.description">
+				<source>Element-Text</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>Element-Bild</source>
+			</trans-unit>
+			<trans-unit id="borderleft.description">
+				<source>Rand links</source>
+			</trans-unit>
+			<trans-unit id="bordertop.description">
+				<source>Rand oben</source>
+			</trans-unit>
+			<trans-unit id="elementhight.description">
+				<source>Höhe des Elements</source>
+			</trans-unit>
+			<trans-unit id="textcolor.description">
+				<source>Schriftfarbe</source>
+			</trans-unit>
+			<trans-unit id="slidedirin.description">
+				<source>Effektrichtung einblenden</source>
+			</trans-unit>
+			<trans-unit id="slidedirout.description">
+				<source>Effektrichtung ausblenden</source>
+			</trans-unit>
+			<trans-unit id="durationin.description">
+				<source>Effektdauer einblenden</source>
+			</trans-unit>
+			<trans-unit id="durationout.description">
+				<source>Effektdauer ausblenden</source>
+			</trans-unit>
+			<trans-unit id="delayin.description">
+				<source>Verzögerung einblenden</source>
+			</trans-unit>
+			<trans-unit id="delayout.description">
+				<source>Verzögerung ausblenden</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

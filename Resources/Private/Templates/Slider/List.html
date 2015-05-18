@@ -1,0 +1,162 @@
+<html xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:layout name="Default" />
+
+<f:section name="main">
+<h1>Listing for Slider</h1>
+
+<f:flashMessages />
+
+{slider.title} - {slider.description} - {config.width}<br />
+
+    <f:if condition="{config.cssclass} == '' ">
+        <f:then>
+            <div id="{config.sliderid}" style="width:{config.width}; height:{config.height}">
+        </f:then>
+        <f:else>
+            <div id="{config.sliderid}" class="{config.cssclass}" style="width:{config.width}; height:{config.height}">
+        </f:else>
+    </f:if>
+    <f:for each="{slider.layers}" as="layer">
+        <div class="ls-slide" data-ls="slidedelay: {layer.slidedelay}; transition2d: {layer.transition2d}; transition3d: {layer.transition3d}; deeplink: {layer.deeplink};">
+            <f:if condition="{layer.bgimage} == '' " >
+                <f:then>
+                    <!--No-bgimage-->
+                </f:then>
+                <f:else>
+                    <img src="uploads/tx_sglayerslider/{layer.bgimage}" class="ls-bg" alt="{layer.title} Background">
+                </f:else>
+            </f:if>
+            <f:if condition="{layer.thumbnail} == '' ">
+                <f:then>
+                    <!-- NO-thumbnail -->
+                </f:then>
+                <f:else>
+                    <img src="uploads/tx_sglayerslider/{layer.thumbnail}" class="ls-tn" alt="{layer.title} Thumbnail">
+                </f:else>
+            </f:if>
+            <f:if condition="{layer.extlink} == ''" >
+                <f:then>
+                    <!-- No Extlink -->
+                </f:then>
+                <f:else>
+                    <a href="{layer.extlink}" class="ls-link"></a>
+                </f:else>
+            </f:if>
+            <div>
+                {layer.uid} - {layer.title}<br />
+                <f:for each="{layer.elements}" as="element">
+                    <f:if condition="{element.image} != '' ">
+                        <f:then>
+                            <img src="uploads/tx_sglayerslider/{element.image}" class="ls-l" data-ls="
+                            parallaxlevel: {element.parallax};
+                            offsetxin: {element.offsetxin};
+                            offsetxout: {element.offsetxout};
+                            offsetyin: {element.offsetyin};
+                            offsetyout: {element.offsetyout};
+                            delayin : {element.delayin};
+                            showuntil: {element.showuntil};
+                            durationin: {element.durationin};
+                            durationout: {element.durationout};
+                            easingin: {element.easingin};
+                            easingout : {element.easingout};
+                            fadein: {element.fadein};
+                            fadeout : {element.fadeout};
+                            rotatein: {element.rotatein};
+                            rotateout: {element.rotateout};
+                            rotatexin: {element.rotatexin};
+                            rotatexout: {element.rotatexout};
+                            rotateyin: {element.rotateyin};
+                            rotateyout: {element.rotateyout};
+                            scalexin: {element.scalexin};
+                            scalexout : {element.scalexout};
+                            scaleyin: {element.scaleyin};
+                            scaleyout : {element.scaleyout};
+                            skewxin: {element.skewxin};
+                            skewxout : {element.skewxout};
+                            skewyin: {element.skewyin};
+                            skewyout : {element.skewyout};
+                            transformoriginin : {element.transformoriginin};
+                            transformoriginout : {element.transformoriginout};
+
+                            " style="top:{element.bordertop}; left:{element.borderleft}" alt="{element.title}">
+                        </f:then>
+                    </f:if>
+                    <f:if condition="{element.elementtext} != '' ">
+                        <f:then>
+                            <h3 class="ls-l">{element.elementtext}</h3>
+                        </f:then>
+                    </f:if>
+                    <f:if condition="{element.medientyp} == 1">
+                        <f:then>
+                            <iframe width="560" height="315" src="{element.medialink}" frameborder="0" allowfullscreen></iframe>
+                        </f:then>
+                    </f:if>
+                    <f:if condition="{element.medientyp} == 2">
+                        <f:then>
+                            <video src="{element.medialink}" controls></video>
+                        </f:then>
+                    </f:if>
+                    <f:if condition="{element.medientyp} == 3">
+                        <f:then>
+                            <audio src="{element.medialink}"></audio>
+                        </f:then>
+                    </f:if>
+
+                </f:for>
+            </div>
+        </div>
+    </f:for>
+     <![CDATA[
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $('#]]>{config.sliderid}<![CDATA[').layerSlider({ ]]>
+            autoStart: {config.autostart},
+            pauseOnHover: {config.pauseOnHover},
+            firstSlide: '{config.firstSlide}',
+            animateFirstSlide: {config.animateFirstSlide},
+            loops: {config.loops},
+            forceLoopNum: {config.forceLoopNum},
+            towWaySlideshow: {config.towWaySlideshow},
+            randomSlideshow: {config.randomSlideshow},
+            responsive: {config.responsive},
+            responsiveUnder: {config.responsiveUnder},
+            layersContainer: {config.layersContainer},
+            globalBGColor: '{config.globalBGColor}',
+            globalBGImage: {config.globalBGImage},
+            globalBGImage: {config.globalBGImage},
+            skin: '{config.skin}',
+            skinsPath: '{config.skinsPath}',
+            navPrevNext: {config.navPrevNext},
+            navStartStop: {config.navStartStop},
+            navButtons: {config.navButtons},
+            hoverPrevNext: {config.hoverPrevNext},
+            hoverBottomNav: {config.hoverBottomNav},
+            keybNav: {config.keybNav},
+            touchNav: {config.touchNav},
+            showBarTimer: {config.showBarTimer},
+            showCircleTimer: {config.showCircleTimer},
+            thumbnailNavigation: '{config.thumbnailNavigation}',
+            tnContainerWidth: '{config.tnContainerWidth}',
+            tnWidth: {config.tnWidth},
+            tnHeight: {config.tnHeight},
+            tnActiveOpacity: {config.tnActiveOpacity},
+            tnInactiveOpacity: {config.tnInactiveOpacity},
+            autoPlayVideos: {config.autoPlayVideos},
+            autoPauseSlideshow: {config.autoPauseSlideshow},
+            youtubePreview: '{config.youtubePreview}',
+            imgPreload: {config.imgPreload},
+            lazyLoad: {config.lazyLoad},
+            yourLogo: {config.yourLogo},
+            yourLogoStyle: '{config.yourLogoStyle}',
+            yourLogoLink: {config.yourLogoLink},
+            yourLogoTarget: '{config.yourLogoTarget}',
+     <![CDATA[
+            });
+        });
+    </script>]]>
+
+
+
+</f:section>
+</html>

@@ -1,0 +1,59 @@
+plugin.tx_sglayerslider {
+	view {
+		templateRootPath = {$plugin.tx_sglayerslider.view.templateRootPath}
+		partialRootPath = {$plugin.tx_sglayerslider.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_sglayerslider.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_sglayerslider.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	config {
+		directory = {$plugin.tx_sglayerslider.config.directory}
+	}
+}
+
+plugin.tx_sglayerslider._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-sg-layerslider table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-sg-layerslider table th {
+		font-weight:bold;
+	}
+
+	.tx-sg-layerslider table td {
+		vertical-align:top;
+	}
+)
+
+page {
+    includeCSS {
+        layerslider={$plugin.tx_sglayerslider.config.directory}/css/layerslider.css
+    }
+    includeJSlibs {
+        jquery={$plugin.tx_sglayerslider.config.directory}/js/jquery.js
+        greensock={$plugin.tx_sglayerslider.config.directory}/js/greensock.js
+        transitions={$plugin.tx_sglayerslider.config.directory}/js/layerslider.transitions.js
+        layerslider={$plugin.tx_sglayerslider.config.directory}/js/layerslider.kreaturamedia.jquery.js
+    }
+    footerData.42=TEXT
+    footerData.42.value (
+
+    )
+}
+
