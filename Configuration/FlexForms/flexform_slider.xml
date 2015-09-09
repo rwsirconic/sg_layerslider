@@ -12,6 +12,7 @@
                             <label>Slider wählen</label>
                             <config>
                                 <type>select</type>
+                                <minitems>1</minitems>
                                 <maxitems>1</maxitems>
                                 <size>6</size>
                                 <foreign_table>tx_sglayerslider_domain_model_slider</foreign_table>
@@ -158,7 +159,7 @@
                 <el>
                     <settings.appearence.globalBGColor>
                         <TCEforms>
-                            <label>Globale Hintergrundfarbe (rrggbb)</label>
+                            <label>Globale Hintergrundfarbe (#rrggbb oder Farbname)</label>
                             <config>
                                 <type>input</type>
                                 <size>6</size>
@@ -190,7 +191,7 @@
                             </config>
                         </TCEforms>
                     </settings.appearence.skin>
-                    <settings.appearence.skinpath>
+                    <settings.appearence.skinsPath>
                         <TCEforms>
                             <label>Skin-Pfad</label>
                             <config>
@@ -198,7 +199,7 @@
                                 <eval>trim</eval>
                             </config>
                         </TCEforms>
-                    </settings.appearence.skinpath>
+                    </settings.appearence.skinsPath>
                 </el>
             </ROOT>
         </appearence>
@@ -333,7 +334,8 @@
                         <TCEforms>
                             <label>Thumbnail Transparenz aktiv</label>
                             <config>
-                                <type>check</type>
+                                <type>input</type>
+                                <size>3</size>
                             </config>
                         </TCEforms>
                     </settings.navigation.tnActiveOpacity>
@@ -341,7 +343,8 @@
                         <TCEforms>
                             <label>Thumbnail Transparenz inaktiv</label>
                             <config>
-                                <type>check</type>
+                                <type>input</type>
+                                <size>3</size>
                             </config>
                         </TCEforms>
                     </settings.navigation.tnInactiveOpacity>

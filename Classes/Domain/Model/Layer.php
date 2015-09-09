@@ -34,7 +34,14 @@ namespace sirconic\SgLayerslider\Domain\Model;
  */
 class Layer extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
-	/**
+    /**
+     * Datastring des Layers
+     *
+     * @var \string
+     */
+    protected $datastring;
+
+    /**
 	 * Titel des Elements
 	 *
 	 * @var \string
@@ -338,5 +345,26 @@ class Layer extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 		$this->elements = $elements;
 	}
 
+    /** Returns the Layers Datastring
+     *
+     * @return \string $datastring
+     */
+    public function getDatastring() {
+        $mystring='';
+        if ($this->slidedelay!='') {
+            $mystring=$mystring.' slidedelay: '.$this->slidedelay.';';
+        }
+        if ($this->transition2d!='') {
+            $mystring=$mystring.' transition2d: '.$this->transition2d.';';
+        }
+        if ($this->transition3d!='') {
+            $mystring=$mystring.' transition3d: '.$this->transition3d.';';
+        }
+        if ($this->deeplink!='') {
+            $mystring=$mystring.' deeplink: '.$this->deeplink.';';
+        }
+
+        return $mystring;
+    }
 }
 ?>

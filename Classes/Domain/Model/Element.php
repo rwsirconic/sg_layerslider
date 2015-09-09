@@ -34,11 +34,70 @@ namespace sirconic\SgLayerslider\Domain\Model;
  */
 class Element extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
+    /** size-string
+     *
+     * @var \string
+     */
+    protected $sizestring;
+
+    /** Image Height
+     *
+     * @var \stringr
+     */
+    protected $imgheight;
+
+
+    /** Imgage Style
+     *
+     * @var  \string
+     * */
+    protected $imgstring;
+
+    /** Image Width
+     *
+     * @var \string
+     */
+    protected $imgwidth;
+
+    /** Image Alt-Value
+     *
+     * @var \string
+     */
+    protected $imgalt;
+
+    /** Image-Stylestring
+     *
+     * @var \string
+     */
+    protected $imgstyle;
+
+    /** Layer-Link ID
+     *
+     * @var \integer
+     */
+    protected $layerlink;
+
     /**
      * Datastring fuer die Zusammenstellung
+     *
      * @var \string
      */
     protected $datastring;
+
+    /**
+     * Textwrap
+     *
+     * @var \integer
+     */
+    protected $textwrap;
+
+    /**
+     * Style-String für die Ausgabe
+     *
+     * @var \string
+     */
+    protected $stylestring;
+
     /**
 	 * Element-Titel
 	 *
@@ -61,29 +120,29 @@ class Element extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	protected $image;
 
+    /**
+	 * Text-Tag
+     *
+	 * @var \string
+	 */
+	protected $texttag;
+
 	/**
 	 * Rand links
 	 *
-	 * @var \integer
+	 * @var \string
 	 */
 	protected $borderleft;
 
 	/**
 	 * Rand oben
 	 *
-	 * @var \integer
+	 * @var \string
 	 */
 	protected $bordertop;
 
 	/**
-	 * Höhe des Elements
-	 *
-	 * @var \integer
-	 */
-	protected $elementhight;
-
-	/**
-	 * Schriftfarbe
+	 * Schrift/Hintergrund-Style
 	 *
 	 * @var \string
 	 */
@@ -211,25 +270,25 @@ class Element extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
     /**
      *
-     * @var \integer
+     * @var \float
      */
     protected $scalexin;
 
     /**
      *
-     * @var \integer
+     * @var \float
      */
     protected $scalexout;
 
     /**
      *
-     * @var \integer
+     * @var \float
      */
     protected $scaleyin;
 
     /**
      *
-     * @var \integer
+     * @var \float
      */
     protected $scaleyout;
 
@@ -292,13 +351,6 @@ class Element extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      * @var \integer
      */
     protected $mediatype;
-
-    /**
-     * *
-     * @var \string
-     */
-    protected $datals;
-
 
     /**
      * Returns the Showuntil
@@ -541,15 +593,6 @@ class Element extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      */
 	public function getMediatype() {
         return $this->mediatype;
-    }
-
-	/**
-     * Returns the Datals
-     *
-     * @return \string $datals
-     */
-	public function getDatals() {
-        return $this->datals;
     }
 
 
@@ -848,21 +891,6 @@ class Element extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 		$this->mediatype = $mediatype;
     }
 
-
-    /**
-     * Sets the datals
-     *
-     * @param \string $datals
-     * @return void
-     */
-    public function setDatals($datals) {
-        if ($this->getParallax()!= '') {
-            $result=$this->getParallax();
-            $datastring='parallaxlevel: '.$result.';';
-        }
-    	$this->datals = $datastring;
-    }
-
 	/**
 	/**
 	/**
@@ -925,16 +953,25 @@ class Element extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * Returns the borderleft
 	 *
-	 * @return \integer $borderleft
+	 * @return \string $borderleft
 	 */
 	public function getBorderleft() {
-		return $this->borderleft;
+        $value=str_replace(' ', '',$this->borderleft);
+        $einheit=mb_eregi_replace('[0-9]','',$value);
+        if ($einheit=='') {
+            $einheit='px';
+            $borderleft=$this->borderleft.$einheit;
+        } else {
+            $borderleft=$this->borderleft;
+        }
+
+		return $borderleft;
 	}
 
 	/**
 	 * Sets the borderleft
 	 *
-	 * @param \integer $borderleft
+	 * @param \string $borderleft
 	 * @return void
 	 */
 	public function setBorderleft($borderleft) {
@@ -944,39 +981,28 @@ class Element extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	/**
 	 * Returns the bordertop
 	 *
-	 * @return \integer $bordertop
+	 * @return \string $bordertop
 	 */
 	public function getBordertop() {
-		return $this->bordertop;
+        $value=str_replace(' ', '',$this->bordertop);
+        $einheit=mb_eregi_replace('[0-9]','',$value);
+        if ($einheit=='') {
+            $einheit='px';
+            $bordertop=$this->bordertop.$einheit;
+        } else {
+            $bordertop=$this->bordertop;
+        }
+		return $bordertop;
 	}
 
 	/**
 	 * Sets the bordertop
 	 *
-	 * @param \integer $bordertop
+	 * @param \string $bordertop
 	 * @return void
 	 */
 	public function setBordertop($bordertop) {
 		$this->bordertop = $bordertop;
-	}
-
-	/**
-	 * Returns the elementhight
-	 *
-	 * @return \integer $elementhight
-	 */
-	public function getElementhight() {
-		return $this->elementhight;
-	}
-
-	/**
-	 * Sets the elementhight
-	 *
-	 * @param \integer $elementhight
-	 * @return void
-	 */
-	public function setElementhight($elementhight) {
-		$this->elementhight = $elementhight;
 	}
 
 	/**
@@ -1112,6 +1138,330 @@ class Element extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 		$this->easingin = $easingin;
 	}
 
+	/**
+	 * Returns the texttag
+	 *
+	 * @return \string $texttag
+	 */
+	public function getTexttag() {
+        return $this->texttag;
+	}
+
+	/**
+	 * Sets the texttag
+	 *
+	 * @param \string $texttag
+	 * @return void
+	 */
+	public function setTexttag($texttag) {
+		$this->texttag = $texttag;
+	}
+
+    /**
+     * Return the elements style-String
+     *
+     * @return \string $stylestring
+     */
+    public function getStylestring() {
+        $mystring='';
+        if ($this->bordertop!='') {
+            $mystring=$mystring.' top: '.$this->bordertop.';';
+        }
+        if ($this->borderleft!='') {
+            $mystring=$mystring.' left: '.$this->borderleft.';';
+        }
+        if ($this->elementtext!='') {
+            if ($this->textwrap=='0') {
+                $mystring=$mystring.' white-space: nowrap;';
+            }
+            if ($this->textcolor!='') {
+                $mystring=$mystring.' '.$this->textcolor;
+            }
+        }
+        return $mystring;
+    }
+    /**
+     * Return the elements data-ls-String
+     *
+     * @return \string $datastring
+     */
+    public function getDatastring() {
+        $mystring='';
+        if ($this->parallax!='') {
+            $mystring=$mystring.' parallaxlevel: '.$this->parallax.';';
+        }
+        if ($this->transformoriginout !='') {
+            $mystring=$mystring.' transformoriginout: '.$this->transformoriginout.';';
+        }
+        if ($this->transformoriginin !='') {
+            $mystring=$mystring.' transformoriginin: '.$this->transformoriginin.';';
+        }
+        if ($this->skewyout !='') {
+            $mystring=$mystring.' skewyout: '.$this->skewyout.';';
+        }
+        if ($this->skewyin !='') {
+            $mystring=$mystring.' skewyin: '.$this->skewyin.';';
+        }
+        if ($this->skewxout !='') {
+            $mystring=$mystring.' skewxout: '.$this->skewxout.';';
+        }
+        if ($this->skewxin !='') {
+            $mystring=$mystring.' skewxin: '.$this->skewxin.';';
+        }
+        if ($this->scaleyout !='') {
+            $mystring=$mystring.' scaleyout: '.$this->scaleyout.';';
+        }
+        if ($this->scaleyin !='') {
+            $mystring=$mystring.' scaleyin: '.$this->scaleyin.';';
+        }
+        if ($this->scalexout !='') {
+            $mystring=$mystring.' scalexout: '.$this->scalexout.';';
+        }
+        if ($this->scalexin !='') {
+            $mystring=$mystring.' scalexin: '.$this->scalexin.';';
+        }
+        if ($this->rotateyout !='') {
+            $mystring=$mystring.' rotateyout: '.$this->rotateyout.';';
+        }
+        if ($this->rotateyin !='') {
+            $mystring=$mystring.' rotateyin: '.$this->rotateyin.';';
+        }
+        if ($this->rotatexout !='') {
+            $mystring=$mystring.' rotatexout: '.$this->rotatexout.';';
+        }
+        if ($this->rotatexin !='') {
+            $mystring=$mystring.' rotatexin: '.$this->rotatexin.';';
+        }
+        if ($this->rotateout !='') {
+            $mystring=$mystring.' rotateout: '.$this->rotateout.';';
+        }
+        if ($this->rotatein !='') {
+            $mystring=$mystring.' rotatein: '.$this->rotatein.';';
+        }
+        if ($this->fadeout !='') {
+            $mystring=$mystring.' fadeout: '.$this->fadeout.';';
+        }
+        if ($this->fadein !='') {
+            $mystring=$mystring.' fadein: '.$this->fadein.';';
+        }
+        if ($this->easingout !='') {
+            $mystring=$mystring.' easingout: '.$this->easingout.';';
+        }
+        if ($this->easingin !='') {
+            $mystring=$mystring.' easingin: '.$this->easingin.';';
+        }
+        if ($this->durationout !='') {
+            $mystring=$mystring.' durationout: '.$this->durationout.';';
+        }
+        if ($this->durationin !='') {
+            $mystring=$mystring.' durationin: '.$this->durationin.';';
+        }
+        if ($this->showuntil !='') {
+            $mystring=$mystring.' showuntil: '.$this->showuntil.';';
+        }
+        if ($this->delayin !='') {
+            $mystring=$mystring.' delayin: '.$this->delayin.';';
+        }
+        if ($this->offsetyout !='') {
+            $mystring=$mystring.' offsetyout: '.$this->offsetyout.';';
+        }
+        if ($this->offsetyin !='') {
+            $mystring=$mystring.' offsetyin: '.$this->offsetyin.';';
+        }
+        if ($this->offsetxout !='') {
+            $mystring=$mystring.' offsetxout: '.$this->offsetxout.';';
+        }
+        if ($this->offsetxin !='') {
+            $mystring=$mystring.' offsetxin: '.$this->offsetxin.';';
+        }
+        return $mystring;
+    }
+    /**
+     * Set the Elements data-ls-String
+     *
+     * @param \string $datastring
+     * @return void
+     */
+    public function setDatastring($datastring) {
+        $this->datastring = $datastring;
+    }
+
+    /**
+     * Returns the Layerlink ID
+     *
+     * @return \integer $layerlink
+     */
+    public function getLayerlink() {
+        return $this->layerlink;
+    }
+
+    /**
+     * Set the Layerlink
+     *
+     * @param \integer $layerlink
+     * @return void
+     */
+    public function setLayerlink($layerlink) {
+        $this->layerlink=$layerlink;
+    }
+
+    /**
+     * Returns the Linewrap-Flag
+     *
+     * @return \integer $textwrap
+     */
+    public function getTextwrap() {
+        return $this->textwrap;
+    }
+
+    /**
+     * Set the Linewrap-Flag
+     *
+     * @param \integer $textwrap
+     * @return void
+     */
+    public function setTextwrap($textwrap) {
+        $this->textwrap=$textwrap;
+    }
+
+    /**
+     * Returns the imagelink
+     *
+     * @return \string $extlink
+     */
+    public function getExtlink() {
+        return $this->extlink;
+    }
+
+    /**
+     * Set the image-link
+     *
+     * @param \string $extlink
+     * @return void
+     */
+    public function setExtlink($extlink) {
+        $this->extlink=$extlink;
+    }
+
+    /**
+     * Returns the imageheight
+     *
+     * @return \string $imgheight
+     */
+    public function getImgheight() {
+        return $this->imgheight;
+    }
+
+    /**
+     * Set the image-height
+     *
+     * @param \string $imgheight
+     * @return void
+     */
+    public function setImgheight($imgheight) {
+        $this->imgheight=$imgheight;
+    }
+
+    /**
+     * Returns the imagewidth
+     *
+     * @return \string $imgwidht
+     */
+    public function getImgwidth() {
+        return $this->imgwidth;
+    }
+
+    /**
+     * Set the image-width
+     *
+     * @param \string $imgwidth
+     * @return void
+     */
+    public function setImgwidth($imgwidth) {
+        $this->imgwidth=$imgwidth;
+    }
+
+    /**
+     * Returns the image style
+     *
+     * @return \string $imgstyle
+     */
+    public function getImgstyle() {
+        $mystring='';
+        if (strlen($this->imgstyle)>0) {
+            $mystring = "style='".$this->imgstyle."' ";
+        }
+
+        return $mystring;
+    }
+
+    /** Set the image style string
+     *
+     * @param \string $imgstyle
+     * @return void
+     */
+    public function setImgstyle() {
+        $this->imgstyle=$imgstyle;
+    }
+
+    /** Returns the img Alt-Value
+     *
+     * @return \string $imgalt
+     */
+    public function getImgalt() {
+        return $this->imgalt;
+    }
+
+    /** Sets the img Alt-Value
+     *
+     * @param \string $imgalt
+     * @return void
+     */
+    public function setImgalt() {
+        $this->imgalt=$imgalt;
+    }
+
+    /** Returns the Elements Sizestring
+     *  Aufbereitung, fuer height und width erlaubt ist
+     * Zahl
+     * Zahl mit Einheit
+     * 'auto'
+     * Bei <=0 wird das Attribut ganz weggelassen.
+     * auto wird beibehalten
+     * Zahl bzw. Zahl mit Einheit wird in 'Zahl px' konvertiert
+     *
+     * @return \string $sizestring
+     */
+    public function getSizestring() {
+        $mystring='';
+        $einheith='';
+        $einheitw='';
+        if ($this->imgheight=='auto' ) {
+            //nix
+            $mystring=$mystring." height='auto'";
+        } else {
+            if ($this->imgheight<=0) {
+                $mystring=$mystring." height='auto'";
+            } else {
+                preg_match('[^\d*]', $this->imgheight, $treffer);
+
+                $mystring=$mystring." height='".$treffer[0]."px' ";
+            }
+        }
+        if ($this->imgwidth=='auto' ) {
+            $mystring=$mystring." width='auto'";
+        } else {
+            if ( $this->imgwidth<=0 ) {
+                $mystring=$mystring." width='auto'";
+            } else {
+                preg_match('[^\d*]', $this->imgwidth, $treffer);
+
+                $mystring=$mystring." width='".$treffer[0]."px' ";
+            }
+        }
+
+        return $mystring;
+    }
 
 }
 ?>

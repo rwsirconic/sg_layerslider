@@ -13,11 +13,11 @@ EXT: LayerSlider
 
 :Extension name: LayerSlider
 :Extension key: sg_layerslider
-:Version: 3.0.0
+:Version: 3.0.8
 :Description: Erweiterung SG_LayerSlider
 :Language: de
 :Author: Robert Wenk
-:Creation: 2014-07-24
+:Creation: 2014-07-27
 :Generation: 10:15
 :Licence: Open Content License available from `www.opencontent.org/opl.shtml <http://www.opencontent.org/opl.shtml>`_
 

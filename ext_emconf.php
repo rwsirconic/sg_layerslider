@@ -20,19 +20,19 @@ $EM_CONF[$_EXTKEY] = array(
 	'shy' => '',
 	'priority' => '',
 	'module' => '',
-	'state' => 'beta',
+	'state' => 'stable',
 	'internal' => '',
 	'uploadfolder' => '1',
 	'createDirs' => '',
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '3.0.1',
+	'version' => '3.0.14',
 	'constraints' => array(
 		'depends' => array(
 			'extbase' => '6.0',
-			'fluid' => '6.0',
-			'typo3' => '6.1.0 - 6.1.999',
+			'fluid' => '6.0         ',
+			'typo3' => '6.1.0 - 6.2.999',
 		),
 		'conflicts' => array(
 		),

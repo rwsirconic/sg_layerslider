@@ -154,13 +154,13 @@ Mit Klick auf das Icon wird ein neues Element im jeweiligen Layer angelegt und d
 
     "Titel","<text>","n.a.","Titel des Elements"
     "Elementtext","text","n.a.","Beschriftung des Elements"
-    "Textcolor","Farbname oder Hexwert","<h3 class","Schriftfarbe der Beschriftung"
-    "Image","<image>","<img src=","Element-Image"
+    "Textstyle","","","Inhalt des Style-Attributes für das Text-Tag"
+    "Text-Tag","h1,h2,h3,h4,h5,p,div","HTML-Tag der den Text umschliesst."
+    "Image","<image>","","<img src=","Element-Image"
     "Media-Link","<url>","n.a.","Vollständige URL zum Video/Audio (htt://youtube...)"
     "Linktyp Media","Youtube, Audio (selfhosted), Video (selfhosted)","<iframe>, <video>, <audio>","Type-Einstellung für die Medium-URL"
     "Borderleft","<px>"," ","Abstand zum linken Rand"
     "Bordertop","<px>"," ","Abstand von Oben"
-    "Elementhöhe","<px>"," ","Höhe des Elements"
     "Verzögerung","ms"," ","Verzögerung zwischen Aktivierung des Elements und start des Effektes"
     "Laufzeit","ms"," ","Dauer des Effektes"
     "Haltezeit nach Effekt","ms","slidedelay","Zeit, die das Element angezeigt wird, wenn der Effekt beendet ist."
@@ -189,3 +189,12 @@ Ja. Das Content-Element wird dafür mehrfach eingebunden.
 
 Auf verschiedenen Seiten: Ja.
 Auf er selben Seite: Nein.
+
+ **In welcher Reihenfolge werden die Layer abgearbeitet?**
+
+Elemente und Layer werden nach aufsteigender UID sortiert ausgegeben. D.h. das Element bzw. der Layer mit der kleinsten
+UID wird zuerst ausgegeben.
+
+ **Die Positionierung der Elemente funktioniert nicht**
+
+In den Feldern Borderleft und Bordertop sind sowohl px als auch % erlaubt. Deshalb muss die Einheit mit angegeben werden.

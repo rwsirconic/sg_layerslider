@@ -9,6 +9,7 @@ CREATE TABLE tx_sglayerslider_domain_model_slider (
 	title varchar(255) DEFAULT '' NOT NULL,
 	description varchar(255) DEFAULT '' NOT NULL,
 	layers int(11) unsigned DEFAULT '0' NOT NULL,
+	sorting int(11) unsigned DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
@@ -49,13 +50,14 @@ CREATE TABLE tx_sglayerslider_domain_model_layer (
 	pid int(11) DEFAULT '0' NOT NULL,
 
 	slider int(11) unsigned DEFAULT '0' NOT NULL,
+	sorting int(11) unsigned DEFAULT '0' NOT NULL,
 
 	title varchar(255) DEFAULT '' NOT NULL,
 	elements int(11) unsigned DEFAULT '0' NOT NULL,
-  slidedelay int(11) unsigned DEFAULT '0' NOT NULL,
+  slidedelay int(11) DEFAULT '0' NOT NULL,
   transition2d varchar(255) DEFAULT '' NOT NULL,
   transition3d varchar(255) DEFAULT '' NOT NULL,
-  timeshift int(11) unsigned DEFAULT '0' NOT NULL,
+  timeshift int(11) DEFAULT '0' NOT NULL,
   deeplink varchar(255) DEFAULT '' NOT NULL,
   extlink varchar(255)  DEFAULT '' NOT NULL,
   bgimage text NOT NULL,
@@ -100,14 +102,22 @@ CREATE TABLE tx_sglayerslider_domain_model_element (
 	pid int(11) DEFAULT '0' NOT NULL,
 
 	layer int(11) unsigned DEFAULT '0' NOT NULL,
+	sorting int(11) unsigned DEFAULT '0' NOT NULL,
 
 	title varchar(255) DEFAULT '' NOT NULL,
 	elementtext varchar(255) DEFAULT '' NOT NULL,
 	image text NOT NULL,
-	borderleft int(11) DEFAULT '0' NOT NULL,
-	bordertop int(11) DEFAULT '0' NOT NULL,
-	elementhight int(11) DEFAULT '0' NOT NULL,
+  imgwidth varchar(11) DEFAULT 'auto' NOT NULL,
+  imgheight varchar(11) DEFAULT 'auto' NOT NULL,
+  imgstyle varchar(255) default NULL,
+  imgalt varchar(255) default NULL,
+	borderleft varchar(255) DEFAULT '0' NOT NULL,
+	bordertop varchar(255) DEFAULT '0' NOT NULL,
 	textcolor varchar(255) DEFAULT '' NOT NULL,
+  texttag varchar(255) DEFAULT '' NOT NULL,
+  textwrap tinyint(4) unsigned DEFAULT '0' NOT NULL,
+  extlink varchar(255) DEFAULT '' NOT NULL,
+  layerlink tinyint(4) unsigned DEFAULT '0' NOT NULL,
 	slidedirin int(11) DEFAULT '0' NOT NULL,
 	slidedirout int(11) DEFAULT '0' NOT NULL,
 	durationin int(11) DEFAULT '0' NOT NULL,
@@ -126,10 +136,10 @@ CREATE TABLE tx_sglayerslider_domain_model_element (
 	rotatexout int(11) DEFAULT '0' NOT NULL,
 	rotateyin int(11) DEFAULT '0' NOT NULL,
 	rotateyout int(11) DEFAULT '0' NOT NULL,
-	scalexin int(11) DEFAULT '0' NOT NULL,
-	scalexout int(11) DEFAULT '0' NOT NULL,
-	scaleyin int(11) DEFAULT '0' NOT NULL,
-	scaleyout int(11) DEFAULT '0' NOT NULL,
+	scalexin decimal(4,2) DEFAULT '1.00' NOT NULL,
+	scalexout decimal(4,2) DEFAULT '1.00' NOT NULL,
+	scaleyin decimal(4,2) DEFAULT '1.00' NOT NULL,
+	scaleyout decimal(4,2) DEFAULT '1.00' NOT NULL,
 	skewxin int(11) DEFAULT '0' NOT NULL,
 	skewxout int(11) DEFAULT '0' NOT NULL,
 	skewyin int(11) DEFAULT '0' NOT NULL,
@@ -169,20 +179,4 @@ CREATE TABLE tx_sglayerslider_domain_model_element (
 
 );
 
-#
-# Table structure for table 'tx_sglayerslider_domain_model_layer'
-#
-CREATE TABLE tx_sglayerslider_domain_model_layer (
 
-	slider  int(11) unsigned DEFAULT '0' NOT NULL,
-
-);
-
-#
-# Table structure for table 'tx_sglayerslider_domain_model_element'
-#
-CREATE TABLE tx_sglayerslider_domain_model_element (
-
-	layer  int(11) unsigned DEFAULT '0' NOT NULL,
-
-);

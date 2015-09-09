@@ -120,19 +120,19 @@ class SliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
         }
 
         if ($this->settings['appearence']['globalBGColor']=='') {
-            $sliderconfig['globalBGColor']='transparent';
+            $sliderconfig['globalBGColor']='\'transparent\'';
         }else{
             $sliderconfig['globalBGColor']='\''.$this->settings['appearence']['globalBGColor'].'\'';
         }
         if ($this->settings['appearence']['globalBGImage']=='') {
             $sliderconfig['globalBGImage']='false';
         }else{
-            $sliderconfig['globalBGImage']=$this->settings['appearence']['globalBGImage'];
+            $sliderconfig['globalBGImage']='\''.$this->settings['appearence']['globalBGImage'].'\'';
         }
         if ($this->settings['appearence']['skin']=='') {
             $sliderconfig['skin']='v5';
         }else{
-            $sliderconfig['skin']=$this->settings['appearence']['globalBGColor'];
+            $sliderconfig['skin']=$this->settings['appearence']['skin'];
         }
         if ($this->settings['appearence']['skinsPath']=='') {
             $sliderconfig['skinsPath']='/layerslider/skins/';
@@ -287,13 +287,14 @@ class SliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
         }
 
         //\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($this->settings);
-        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($sliderconfig);
-        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($sliders);
+        //\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($sliderconfig);
+        //\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($sliders);
 
 
 		$this->view->assign('slider', $sliders);
         $this->view->assign('layers',$layers);
         $this->view->assign('elements',$elements);
+
         $this->view->assign('config',$sliderconfig);
 
 

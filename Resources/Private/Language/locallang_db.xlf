@@ -58,8 +58,20 @@
 			<trans-unit id="tx_sglayerslider_domain_model_element">
 				<source>Element</source>
 			</trans-unit>
-			<trans-unit id="tx_sglayerslider_domain_model_element.title">
-				<source>Title</source>
+			<trans-unit id="tx_sglayerslider_domain_model_element.header.image">
+				<source>Bild</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.imgheight">
+				<source>Höhe (px|auto)</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.imgwidth">
+				<source>Breite (px|auto)</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.imgstyle">
+				<source>Image Style</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.imgalt">
+				<source>Image Alttext</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.elementtext">
 				<source>Elementtext</source>
@@ -76,8 +88,11 @@
 			<trans-unit id="tx_sglayerslider_domain_model_element.elementhight">
 				<source>Elementhight</source>
 			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.texttag">
+				<source>Text-Tag (html)</source>
+			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.textcolor">
-				<source>Textcolor</source>
+				<source>Textstyle</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.showuntil">
 				<source>Haltezeit nach Effekt (ms)</source>
@@ -116,7 +131,7 @@
 				<source>Parallaxe</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.header.border">
-				<source>Border X,Y</source>
+				<source>Border X,Y (px/%)</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.header.media">
 				<source>Eingebettete Medien</source>
@@ -153,9 +168,17 @@
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.header.transform">
 				<source>Transformations-Ursprung (%/px) x y z</source>
+			</trans-unit><trans-unit id="tx_sglayerslider_domain_model_element.textwrap">
+				<source>automatischer Zeilenumbruch</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.offsetxin">
 				<source>Einblenden X</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.extlink">
+				<source>Externer Link (http://www...)</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.layerlink">
+				<source>Link zu Layer (Layer-Nr)</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.offsetyin">
 				<source>Einblenden Y</source>
@@ -206,7 +229,7 @@
 				<source>Skalierung Y In</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.scaleyout">
-				<source>Skalierung X Out</source>
+				<source>Skalierung Y Out</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.skewxin">
 				<source>Verzerren X In</source>
@@ -236,7 +259,7 @@
 				<source>easeOutSine</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutSine">
-				<source>easeInSine</source>
+				<source>easeInOutSine</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInQuad">
 				<source>easeInQuad</source>
@@ -247,14 +270,14 @@
 			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutQuad">
 				<source>easeInOutQuad</source>
 			</trans-unit>
-			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInQubic">
-				<source>easeInQubic</source>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInCubic">
+				<source>easeInCubic</source>
 			</trans-unit>
-			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutQubic">
-				<source>easeOutQubic</source>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutCubic">
+				<source>easeOutCubic</source>
 			</trans-unit>
-			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutQubic">
-				<source>easeInOutQubic</source>
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutCubic">
+				<source>easeInOutCubic</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInQuart">
 				<source>easeInQuart</source>
@@ -304,7 +327,7 @@
 			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInElastic">
 				<source>easeInElastic</source>
 			</trans-unit>
-			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutElasitc">
+			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeOutElastic">
 				<source>easeOutElastic</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.easing.easeInOutElastic">

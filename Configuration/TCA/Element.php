@@ -6,11 +6,12 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_sglayerslider_domain_model_element'] = array(
 	'ctrl' => $TCA['tx_sglayerslider_domain_model_element']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, elementtext, image, medialink, mediatype, borderleft, bordertop, elementhight, textcolor, slidedirin, slidedirout, durationin, easingin, easingout, delayin',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, elementtext,texttag, image, imgheight,imgwidth,medialink, mediatype, borderleft, bordertop, elementhight, textcolor, slidedirin, slidedirout, durationin, easingin, easingout, delayin',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title,
-		                --palette--;LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.header.textcol;textcol, image,
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, extlink, layerlink,
+		                --palette--;LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.header.textcol;textcol,
+		                --palette--;LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.header.image;image,
 		                --palette--;LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.header.media;media,
 		                --palette--;LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.header.border;border, elementhight,
 		                --div--;LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.header.effekt;;;1-1-1,delayin,
@@ -27,12 +28,13 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
+        'image' => array('showitem'=>'image,--linebreak--,imgwidth,imgheight,imgstyle,--linebreak--,imgalt','canNotCollapse'=>1),
         'easing' => array('showitem'=>'easingin,easingout','canNotCollapse'=> 1),
         'border' => array('showitem'=>'borderleft,bordertop','canNotCollapse'=> 1),
         'media' => array('showitem'=>'medialink,mediatype','canNotCollapse'=> 1),
         'duration' => array('showitem'=>'durationin,durationout','canNotCollapse'=> 1),
         'offset' => array('showitem'=>'offsetxin,offsetyin,--linebreak--,offsetxout,offsetyout','canNotCollapse'=> 1),
-        'textcol' => array('showitem'=>'elementtext,textcolor','canNotCollapse'=> 1),
+        'textcol' => array('showitem'=>'elementtext,textwrap,--linebreak--,texttag,textcolor','canNotCollapse'=> 1),
         'fadeing' => array('showitem'=>'fadein,fadeout','canNotCollapse'=> 1),
         'rotate' => array('showitem'=>'rotatein,rotateout,--linebreak--,rotatexin,rotateyin,--linebreak--,rotatexout,rotateyout','canNotCollapse'=> 1),
         'scaling' => array('showitem'=>'scalexin,scalexout,--linebreak--,scaleyin,scaleyout','canNotCollapse'=> 1),
@@ -96,7 +98,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 				'max' => 20,
 				'eval' => 'datetime',
 				'checkbox' => 0,
-				'default' => 0,
 				'range' => array(
 					'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
 				),
@@ -112,7 +113,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 				'max' => 20,
 				'eval' => 'datetime',
 				'checkbox' => 0,
-				'default' => 0,
 				'range' => array(
 					'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
 				),
@@ -127,23 +127,86 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 				'eval' => 'trim,required'
 			),
 		),
-		'elementtext' => array(
-			'exclude' => 0,
-			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.elementtext',
-			'config' => array(
-				'type' => 'input',
-				'size' => 30,
-				'eval' => 'trim'
-			),
-		),
+        'elementtext' => array(
+            'exclude' => 0,
+            'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.elementtext',
+            'config' => array(
+                'type' => 'text',
+                'cols' => 30,
+                'rows' => 3,
+                'eval' => 'trim'
+            ),
+        ),
+        'extlink' => array(
+            'exclude' => 0,
+            'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.extlink',
+            'config' => array(
+                'type' => 'input',
+                'size' => 50,
+                'eval' => 'trim'
+            ),
+        ),
+        'layerlink' => array(
+            'exclude' => 0,
+            'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.layerlink',
+            'config' => array(
+                'type' => 'input',
+                'size' => 3,
+                'eval' => 'trim'
+            ),
+        ),
+        'textwrap' => array(
+            'exclude' => 1,
+            'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.textwrap',
+            'config' => array(
+                'type' => 'check',
+                'default' => 1,
+            ),
+        ),
+        'texttag' => array(
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.texttag',
+            'config' => array(
+                'type' => 'select',
+                'items' => array(
+                    array(
+                        'H1',
+                        'h1'
+                    ),
+                    array(
+                        'H2',
+                        'h2'
+                    ),
+                    array(
+                        'H3',
+                        'h3'
+                    ),
+                    array(
+                        'H4',
+                        'h4'
+                    ),
+                    array(
+                        'H5',
+                        'h5'
+                    ),
+                    array(
+                        'P',
+                        'p',
+                    ),
+                    array(
+                        'DIV',
+                        'div',
+                    ),
+                ),
+            ),
+        ),
 		'transformoriginin' => array(
 			'exclude' => 0,
 			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.transformoriginin',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
-				'eval' => 'trim',
-                'default' => '50% 50% 0',
+				'eval' => 'trim'
 			),
 		),
 		'transformoriginout' => array(
@@ -153,7 +216,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 				'type' => 'input',
 				'size' => 30,
                 'eval' => 'trim',
-                'default' => '50% 50% 0',
 			),
 		),
 		'offsetxin' => array(
@@ -162,7 +224,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default' => '80',
 				'eval' => 'trim'
 			),
 		),
@@ -172,7 +233,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default' => '0',
 				'eval' => 'trim'
 			),
 		),
@@ -181,7 +241,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.offsetyin',
 			'config' => array(
 				'type' => 'input',
-                'default' => '-80',
 				'size' => 6,
 				'eval' => 'trim'
 			),
@@ -192,7 +251,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default' => '0',
                 'eval' => 'trim'
 			),
 		),
@@ -202,7 +260,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int'
 			),
 		),
@@ -212,7 +269,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int'
 			),
 		),
@@ -222,7 +278,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int'
 			),
 		),
@@ -232,7 +287,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int'
 			),
 		),
@@ -242,7 +296,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int'
 			),
 		),
@@ -252,7 +305,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int'
 			),
 		),
@@ -262,8 +314,7 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>1,
-				'eval' => 'int'
+				'eval' => 'double2'
 			),
 		),
 		'scalexout' => array(
@@ -272,8 +323,7 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'1',
-				'eval' => 'int'
+				'eval' => 'double2'
 			),
 		),
 		'scaleyin' => array(
@@ -282,8 +332,7 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'1',
-				'eval' => 'int'
+				'eval' => 'double2'
 			),
 		),
 		'scaleyout' => array(
@@ -292,8 +341,7 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'1',
-				'eval' => 'int'
+				'eval' => 'double2'
 			),
 		),
 		'skewxin' => array(
@@ -302,7 +350,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int',
 			),
 		),
@@ -312,7 +359,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int',
 			),
 		),
@@ -322,7 +368,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int',
 			),
 		),
@@ -332,7 +377,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int',
 			),
 		),
@@ -342,7 +386,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default'=>'0',
 				'eval' => 'int',
 			),
 		),
@@ -351,7 +394,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
             'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.fadein',
             'config' => array(
                 'type' => 'check',
-                'default' => '1'
             ),
         ),
         'fadeout' => array(
@@ -359,7 +401,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
             'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.fadeout',
             'config' => array(
                 'type' => 'check',
-                'default' => '1',
             ),
         ),
 		'medialink' => array(
@@ -534,8 +575,8 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
                         'EXT:sg_layerslider/Resources/Public/Icons/easeInElastic.gif'
                     ),
                     array(
-                        'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.easing.easeOutElasitc',
-                        'easeOutElasitc',
+                        'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.easing.easeOutElastic',
+                        'easeOutElastic',
                         'EXT:sg_layerslider/Resources/Public/Icons/easeOutElastic.gif'
                     ),
                     array(
@@ -702,8 +743,8 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
                         'EXT:sg_layerslider/Resources/Public/Icons/easeInElastic.gif'
                     ),
                     array(
-                        'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.easing.easeOutElasitc',
-                        'easeOutElasitc',
+                        'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.easing.easeOutElastic',
+                        'easeOutElastic',
                         'EXT:sg_layerslider/Resources/Public/Icons/easeOutElastic.gif'
                     ),
                     array(
@@ -738,8 +779,8 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.borderleft',
 			'config' => array(
 				'type' => 'input',
-				'size' => 4,
-				'eval' => 'int'
+				'size' => 10,
+				'eval' => 'trim'
 			),
 		),
 		'bordertop' => array(
@@ -747,17 +788,46 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.bordertop',
 			'config' => array(
 				'type' => 'input',
-				'size' => 4,
-				'eval' => 'int'
+				'size' => 10,
+				'eval' => 'trim'
 			),
 		),
-		'elementhight' => array(
+        'imgheight' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.elementhight',
+			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.imgheight',
 			'config' => array(
 				'type' => 'input',
-				'size' => 4,
-				'eval' => 'int'
+				'size' => 10,
+				'eval' => 'trim',
+                'default' => 'auto'
+			),
+		),
+		'imgwidth' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.imgwidth',
+			'config' => array(
+				'type' => 'input',
+				'size' => 10,
+				'eval' => 'trim',
+                'default' => 'auto'
+			),
+		),
+        'imgstyle' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.imgstyle',
+			'config' => array(
+				'type' => 'input',
+				'size' => 40,
+				'eval' => 'trim'
+			),
+		),
+        'imgalt' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.imgalt',
+			'config' => array(
+				'type' => 'input',
+				'size' => 40,
+				'eval' => 'trim'
 			),
 		),
 		'textcolor' => array(
@@ -792,7 +862,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.durationin',
 			'config' => array(
 				'type' => 'input',
-                'default' => 1000,
 				'size' => 6,
 				'eval' => 'int'
 			),
@@ -803,7 +872,6 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 6,
-                'default' => 1000,
 				'eval' => 'int'
 			),
 		),

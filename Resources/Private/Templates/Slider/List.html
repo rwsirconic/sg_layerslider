@@ -1,13 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+{namespace ls = sirconic\SgLayerslider\ViewHelpers}
+
 <f:layout name="Default" />
 
 <f:section name="main">
-<h1>Listing for Slider</h1>
-
 <f:flashMessages />
-
-{slider.title} - {slider.description} - {config.width}<br />
-
+    <!-- slider -->
     <f:if condition="{config.cssclass} == '' ">
         <f:then>
             <div id="{config.sliderid}" style="width:{config.width}; height:{config.height}">
@@ -17,10 +15,20 @@
         </f:else>
     </f:if>
     <f:for each="{slider.layers}" as="layer">
-        <div class="ls-slide" data-ls="slidedelay: {layer.slidedelay}; transition2d: {layer.transition2d}; transition3d: {layer.transition3d}; deeplink: {layer.deeplink};">
+        <!-- {layer.uid} {layer.title} -->
+        <!-- layer-loop -->
+        <div class="ls-slide"
+             <f:if condition="{layer.datastring} == '' ">
+                <f:then>
+                    >
+                </f:then>
+                <f:else>
+                    data-ls="{layer.datastring}">
+                </f:else>
+             </f:if>
+
             <f:if condition="{layer.bgimage} == '' " >
                 <f:then>
-                    <!--No-bgimage-->
                 </f:then>
                 <f:else>
                     <img src="uploads/tx_sglayerslider/{layer.bgimage}" class="ls-bg" alt="{layer.title} Background">
@@ -28,7 +36,6 @@
             </f:if>
             <f:if condition="{layer.thumbnail} == '' ">
                 <f:then>
-                    <!-- NO-thumbnail -->
                 </f:then>
                 <f:else>
                     <img src="uploads/tx_sglayerslider/{layer.thumbnail}" class="ls-tn" alt="{layer.title} Thumbnail">
@@ -36,55 +43,37 @@
             </f:if>
             <f:if condition="{layer.extlink} == ''" >
                 <f:then>
-                    <!-- No Extlink -->
                 </f:then>
                 <f:else>
                     <a href="{layer.extlink}" class="ls-link"></a>
                 </f:else>
             </f:if>
-            <div>
-                {layer.uid} - {layer.title}<br />
+            <div><!-- element-loop -->
                 <f:for each="{layer.elements}" as="element">
+                    <!-- {element.uid} {element.title} -->
                     <f:if condition="{element.image} != '' ">
                         <f:then>
-                            <img src="uploads/tx_sglayerslider/{element.image}" class="ls-l" data-ls="
-                            parallaxlevel: {element.parallax};
-                            offsetxin: {element.offsetxin};
-                            offsetxout: {element.offsetxout};
-                            offsetyin: {element.offsetyin};
-                            offsetyout: {element.offsetyout};
-                            delayin : {element.delayin};
-                            showuntil: {element.showuntil};
-                            durationin: {element.durationin};
-                            durationout: {element.durationout};
-                            easingin: {element.easingin};
-                            easingout : {element.easingout};
-                            fadein: {element.fadein};
-                            fadeout : {element.fadeout};
-                            rotatein: {element.rotatein};
-                            rotateout: {element.rotateout};
-                            rotatexin: {element.rotatexin};
-                            rotatexout: {element.rotatexout};
-                            rotateyin: {element.rotateyin};
-                            rotateyout: {element.rotateyout};
-                            scalexin: {element.scalexin};
-                            scalexout : {element.scalexout};
-                            scaleyin: {element.scaleyin};
-                            scaleyout : {element.scaleyout};
-                            skewxin: {element.skewxin};
-                            skewxout : {element.skewxout};
-                            skewyin: {element.skewyin};
-                            skewyout : {element.skewyout};
-                            transformoriginin : {element.transformoriginin};
-                            transformoriginout : {element.transformoriginout};
-
-                            " style="top:{element.bordertop}; left:{element.borderleft}" alt="{element.title}">
+                            <f:if condition="{element.extlink} == '' ">
+                                <f:then>
+                                    <f:if condition="{element.layerlink} == 0 ">
+                                        <f:then>
+                                             <img src="uploads/tx_sglayerslider/{element.image}" {element.sizestring} class="ls-l" data-ls="{element.datastring}" {element.imgstyle} alt="{element.imgalt}">
+                                        </f:then>
+                                        <f:else>
+                                            <img src="uploads/tx_sglayerslider/{element.image}"  {element.sizestring} class="ls-l ls-linkto-{element.layerlink}" data-ls="{element.datastring}"{element.imgstyle} alt="{element.imgalt}">
+                                        </f:else>
+                                    </f:if>
+                                </f:then>
+                                <f:else>
+                                    <a href="{element.extlink}" class="ls-l" data-ls="{element.datastring}" style="{element.stylestring}">
+                                        <img src="uploads/tx_sglayerslider/{element.image}" {element.sizestring} {element.imgstyle} alt="{element.imgalt}">
+                                    </a>
+                                </f:else>
+                            </f:if>
                         </f:then>
-                    </f:if>
-                    <f:if condition="{element.elementtext} != '' ">
-                        <f:then>
-                            <h3 class="ls-l">{element.elementtext}</h3>
-                        </f:then>
+                        <f:else>
+                            <{element.texttag} class="ls-l" data-ls="{element.datastring}" style="{element.textcolor}" ><f:format.raw>{element.elementtext}</f:format.raw></{element.texttag}>
+                        </f:else>
                     </f:if>
                     <f:if condition="{element.medientyp} == 1">
                         <f:then>
@@ -101,10 +90,9 @@
                             <audio src="{element.medialink}"></audio>
                         </f:then>
                     </f:if>
-
                 </f:for>
-            </div>
-        </div>
+            </div><!-- element-loop -->
+        </div><!-- layer-loop -->
     </f:for>
      <![CDATA[
     <script type="text/javascript">
@@ -122,8 +110,7 @@
             responsive: {config.responsive},
             responsiveUnder: {config.responsiveUnder},
             layersContainer: {config.layersContainer},
-            globalBGColor: '{config.globalBGColor}',
-            globalBGImage: {config.globalBGImage},
+            globalBGColor: {config.globalBGColor},
             globalBGImage: {config.globalBGImage},
             skin: '{config.skin}',
             skinsPath: '{config.skinsPath}',
@@ -155,8 +142,6 @@
             });
         });
     </script>]]>
-
-
-
+</div><!-- slider -->
 </f:section>
 </html>

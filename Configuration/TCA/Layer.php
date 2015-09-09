@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_sglayerslider_domain_model_layer'] = array(
 	'ctrl' => $TCA['tx_sglayerslider_domain_model_layer']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title,  ,bgimage, thumbnail, slidedelay, transition2d, transition3d, timeshift, deeplink, extlink, elements',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, bgimage, thumbnail, slidedelay, transition2d, transition3d, timeshift, deeplink, extlink, elements',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, bgimage, thumbnail, slidedelay, timeshift, transition2d, transition3d, deeplink, extlink, elements,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title,bgimage, thumbnail, slidedelay, timeshift, transition2d, transition3d, deeplink, extlink, elements,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -373,7 +373,7 @@ $TCA['tx_sglayerslider_domain_model_layer'] = array(
 			'label' => 'LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_layer.timeshift',
 			'config' => array(
 				'type' => 'input',
-				'size' => 4,
+				'size' => 8,
 				'eval' => 'int'
 			),
 		),
@@ -411,9 +411,11 @@ $TCA['tx_sglayerslider_domain_model_layer'] = array(
 				'type' => 'inline',
 				'foreign_table' => 'tx_sglayerslider_domain_model_element',
 				'foreign_field' => 'layer',
+                'foreign_sortby' => 'sorting',
 				'maxitems'      => 9999,
 				'appearance' => array(
-					'collapseAll' => 0,
+					'collapseAll' => 1,
+                    'expandSingle' => 1,
 					'levelLinksPosition' => 'top',
 					'showSynchronizationLink' => 1,
 					'showPossibleLocalizationRecords' => 1,
