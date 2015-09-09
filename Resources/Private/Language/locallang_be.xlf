@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider">
+		<header/>
+		<body>
+
+			<trans-unit id="flexforms_tab.slideshow">
+				<source>Slideshow</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.selectSlideshow">
+				<source>Select slideshow</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.autostart">
+				<source>Autostart</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.pauseOnHover">
+				<source>Pause on hover</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.firstSlideRandom">
+				<source>First slide is random</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.animateFirstSlide">
+				<source>Animate first slide</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.numberOfLoops">
+				<source>Number of loops</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.forceLoopNumbers">
+				<source>Force loop numbers (even if restarted)</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.twoWaySlideshow">
+				<source>Two way slideshow</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.randomSlideshow">
+				<source>Random slideshow</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms_tab.layout">
+				<source>Layout</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.layoutWidth">
+				<source>Width (px/%)</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.layoutHeight">
+				<source>Height (px/%)</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.responsive">
+				<source>Responsive</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.responsiveBelow">
+				<source>Responsive only below (px)</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.containerLayer">
+				<source>Container for layer (0=off)</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.layoutCssClass">
+				<source>CSS class</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms_tab.appearance">
+				<source>Appearance</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.globalBgColor">
+				<source>Global background color (#rrggbb or color)</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.globalBgImage">
+				<source>Global background image</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.skin">
+				<source>Skin</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.skinsPath">
+				<source>Skins path</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms_tab.navigation">
+				<source>Navigation</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.showPreviousNextBtn">
+				<source>Show Previous Next buttons</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.showStartStopBtn">
+				<source>Show Start Stop buttons</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.showNavBtn">
+				<source>Show navigation buttons</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.hoverOverPrevNextBtn">
+				<source>Hover over Previous Next buttons</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.hoverOverBtmNav">
+				<source>Hover over bottom navigation</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.navigateSlidesArrowKeys">
+				<source>Navigate slides using left and right arrow keys</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.activateTouchNav">
+				<source>Activate touch navigation</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.showBarTimer">
+				<source>Show the bar timer</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.useCircleTimer">
+				<source>Use circle timer</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.thumbnailNav">
+				<source>Thumbnail navigation</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.thumbnail.disabled">
+				<source>disabled</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.thumbnail.hover">
+				<source>hover</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.thumbnail.always">
+				<source>always</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.thumbnailContainerWidth">
+				<source>Width of thumbnail container (%)</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.thumbnailWidth">
+				<source>Thumbnail width (px)</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.thumbnailHeight">
+				<source>Thumbnail height (px)</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.thumbnailActOpacity">
+				<source>Thumbnail active opacity</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.thumbnailInactOpacity">
+				<source>Thumbnail inactive opacity</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms_tab.video">
+				<source>Video</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.autoplayVideo">
+				<source>Autoplay video</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.pauseSlideshowVideo">
+				<source>Pause slideshow while playing video</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.pauseSlideshow.disabled">
+				<source>disabled</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.pauseSlideshow.auto">
+				<source>auto</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.pauseSlideshow.enabled">
+				<source>enabled</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.videoPreview">
+				<source>Video Preview</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.videoPreview.default">
+				<source>default</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.videoPreview.medQuality">
+				<source>Medium Quality</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.videoPreview.hiQuality">
+				<source>High Quality</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.videoPreview.maxQuality">
+				<source>Max Quality</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms_tab.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.preloadImages">
+				<source>Preload images</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.loadImagesOnlyWhenNeeded">
+				<source>Load images only when needed (relies on preload)</source>
+			</trans-unit>
+
+			<trans-unit id="flexforms_tab.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.logoCssStyle">
+				<source>Logo CSS-style</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.logoLink">
+				<source>Logo link</source>
+			</trans-unit>
+			<trans-unit id="flexforms_template.logoLinkTarget">
+				<source>Link target</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

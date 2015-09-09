@@ -418,10 +418,10 @@ $TCA['tx_sglayerslider_domain_model_element'] = array(
             'config' => array(
                 'type' => 'select',
                 'items' => array(
-                    array('--keine Medien --',0),
+                    array('LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.mediatype.nomedia',0),
                     array('Youtube',1),
-                    array('Video (opt. selfhosted)',2),
-                    array('Audio (opt. selfhosted)',3),
+                    array('LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.mediatype.video',2),
+                    array('LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_element.mediatype.audio',3),
                 ),
             ),
         ),

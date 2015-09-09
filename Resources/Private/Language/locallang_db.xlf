@@ -38,6 +38,9 @@
 			<trans-unit id="tx_sglayerslider_domain_model_layer.transition3d">
 				<source>3D transition used</source>
 			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.transition.all">
+				<source>All</source>
+			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_layer.deeplink">
 				<source>Deeplink alias</source>
 			</trans-unit>
@@ -72,6 +75,9 @@
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.imgalt">
 				<source>Image alt-text</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.title">
+				<source>Title</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.elementtext">
 				<source>Element text</source>
@@ -118,14 +124,23 @@
 			<trans-unit id="tx_sglayerslider_domain_model_element.mediatype">
 				<source>Media linktype</source>
 			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.mediatype.nomedia">
+				<source>-- no media --</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.mediatype.video">
+				<source>Video (opt. selfhosted)</source>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.mediatype.audio">
+				<source>Audio (opt. selfhosted)</source>
+			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.parallax">
-				<source>Parallaxen-Ebene</source>
+				<source>Parallax value</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.header.effekt">
 				<source>Transition</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.header.parallax">
-				<source>Parallax value</source>
+				<source>Parallax</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.header.border">
 				<source>Border X,Y (px/%)</source>
@@ -165,7 +180,8 @@
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.header.transform">
 				<source>Transformation origin (%/px) x y z</source>
-			</trans-unit><trans-unit id="tx_sglayerslider_domain_model_element.textwrap">
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.textwrap">
 				<source>Automatic line numbering</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.offsetxin">
@@ -186,11 +202,11 @@
 			<trans-unit id="tx_sglayerslider_domain_model_element.offsetyout">
 				<source>Offset Y out</source>
 			</trans-unit>
-			<trans-unit id="tx_sglayerslider_domain_model_element.transformin">
-				<source>Transform in</source>
+			<trans-unit id="tx_sglayerslider_domain_model_element.transformoriginin">
+				<source>Transform origin in</source>
 			</trans-unit>
-			<trans-unit id="tx_sglayerslider_domain_model_element.transformout">
-				<source>Transform out</source>
+			<trans-unit id="tx_sglayerslider_domain_model_element.transformoriginout">
+				<source>Transform origin out</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.fadein">
 				<source>Fade in</source>

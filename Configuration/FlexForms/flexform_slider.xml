@@ -3,13 +3,13 @@
         <slider>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>Slideshow</sheetTitle>
+                    <sheetTitle>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.slideshow</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
                     <settings.slider.uid>
                         <TCEforms>
-                            <label>Slider wählen</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.selectSlideshow</label>
                             <config>
                                 <type>select</type>
                                 <minitems>1</minitems>
@@ -21,7 +21,7 @@
                     </settings.slider.uid>
                     <settings.slider.autostart>
                         <TCEforms>
-                            <label>Autostart</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.autostart</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -29,7 +29,7 @@
                     </settings.slider.autostart>
                     <settings.slider.pauseOnHover>
                         <TCEforms>
-                            <label>Pause bei Hover</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.pauseOnHover</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -37,7 +37,7 @@
                     </settings.slider.pauseOnHover>
                     <settings.slider.firstSlide>
                         <TCEforms>
-                            <label>Erste Layer zufällig</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.firstSlideRandom</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -45,7 +45,7 @@
                     </settings.slider.firstSlide>
                     <settings.slider.animateFirstSlide>
                         <TCEforms>
-                            <label>Erster Layer animiert</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.animateFirstSlide</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -53,7 +53,7 @@
                     </settings.slider.animateFirstSlide>
                     <settings.slider.loops>
                         <TCEforms>
-                            <label>Anzahl Durchläufe</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.numberOfLoops</label>
                             <config>
                                 <type>input</type>
                                 <size>6</size>
@@ -62,7 +62,7 @@
                     </settings.slider.loops>
                     <settings.slider.forceLoopNum>
                         <TCEforms>
-                            <label>Durchläufe begrenzen</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.forceLoopNumbers</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -70,7 +70,7 @@
                     </settings.slider.forceLoopNum>
                     <settings.slider.towWaySlideshow>
                         <TCEforms>
-                            <label>Bidirektional</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.twoWaySlideshow</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -78,7 +78,7 @@
                     </settings.slider.towWaySlideshow>
                     <settings.slider.randomSlideshow>
                         <TCEforms>
-                            <label>Zufällige Reihenfolge</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.randomSlideshow</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -90,13 +90,13 @@
         <layout>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>Layout</sheetTitle>
+                    <sheetTitle>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.layout</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
                     <settings.layout.width>
                         <TCEforms>
-                            <label>Breite (px/%)</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.layoutWidth</label>
                             <config>
                                 <type>input</type>
                                 <size>6</size>
@@ -105,7 +105,7 @@
                     </settings.layout.width>
                     <settings.layout.height>
                         <TCEforms>
-                            <label>Höhe (px/%)</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.layoutHeight</label>
                             <config>
                                 <type>input</type>
                                 <size>6</size>
@@ -114,7 +114,7 @@
                     </settings.layout.height>
                     <settings.layout.responsive>
                         <TCEforms>
-                            <label>Responsive</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.responsive</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -122,7 +122,7 @@
                     </settings.layout.responsive>
                     <settings.layout.responsiveUnder>
                         <TCEforms>
-                            <label>Responsive unter (px)</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.responsiveBelow</label>
                             <config>
                                 <type>input</type>
                                 <size>6</size>
@@ -131,7 +131,7 @@
                     </settings.layout.responsiveUnder>
                     <settings.layout.layersContainer>
                         <TCEforms>
-                            <label>Container für Layer (0=off)</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.containerLayer</label>
                             <config>
                                 <type>input</type>
                                 <size>6</size>
@@ -140,7 +140,7 @@
                     </settings.layout.layersContainer>
                     <settings.layout.cssclass>
                         <TCEforms>
-                            <label>CSS-Klasse</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.layoutCssClass</label>
                             <config>
                                 <type>input</type>
                                 <eval>trim</eval>
@@ -153,13 +153,13 @@
         <appearence>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>Darstellung</sheetTitle>
+                    <sheetTitle>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.appearance</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
                     <settings.appearence.globalBGColor>
                         <TCEforms>
-                            <label>Globale Hintergrundfarbe (#rrggbb oder Farbname)</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.globalBgColor</label>
                             <config>
                                 <type>input</type>
                                 <size>6</size>
@@ -168,11 +168,11 @@
                     </settings.appearence.globalBGColor>
                     <settings.appearence.globalBGImage>
                         <TCEforms>
-                            <label>Globales Hintergrundbild</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.globalBgImage</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>file</internal_type>
-                                <allowed>gif, jpg,jpeg,png</allowed>
+                                <allowed>gif,jpg,jpeg,png</allowed>
                                 <max_size>10000</max_size>
                                 <uploadfolder>uploads/tx_sglayerslider</uploadfolder>
                                 <maxitems>1</maxitems>
@@ -184,7 +184,7 @@
                     </settings.appearence.globalBGImage>
                     <settings.appearence.skin>
                         <TCEforms>
-                            <label>Container Skin</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.skin</label>
                             <config>
                                 <type>input</type>
                                 <eval>trim</eval>
@@ -193,7 +193,7 @@
                     </settings.appearence.skin>
                     <settings.appearence.skinsPath>
                         <TCEforms>
-                            <label>Skin-Pfad</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.skinsPath</label>
                             <config>
                                 <type>input</type>
                                 <eval>trim</eval>
@@ -206,13 +206,13 @@
         <navigation>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>Navigation</sheetTitle>
+                    <sheetTitle>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.navigation</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
                     <settings.navigation.navPrevNext>
                         <TCEforms>
-                            <label>Vorwärts-Rückwärts Buttons anzeigen</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.showPreviousNextBtn</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -220,7 +220,7 @@
                     </settings.navigation.navPrevNext>
                     <settings.navigation.navStartStop>
                         <TCEforms>
-                            <label>Start-Stop Buttons anzeigen</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.showStartStopBtn</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -228,7 +228,7 @@
                     </settings.navigation.navStartStop>
                     <settings.navigation.navButtons>
                         <TCEforms>
-                            <label>Navigations-Buttons anzeigen</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.showNavBtn</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -236,7 +236,7 @@
                     </settings.navigation.navButtons>
                     <settings.navigation.hoverPrevNext>
                         <TCEforms>
-                            <label>Hover auf Vorwärts-Rückwärts Buttons</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.hoverOverPrevNextBtn</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -244,7 +244,7 @@
                     </settings.navigation.hoverPrevNext>
                     <settings.navigation.hoverBottomNav>
                         <TCEforms>
-                            <label>Hover auf Fuss-Navigation</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.hoverOverBtmNav</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -252,7 +252,7 @@
                     </settings.navigation.hoverBottomNav>
                     <settings.navigation.keybNav>
                         <TCEforms>
-                            <label>Navigation per Tastatur aktivieren</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.navigateSlidesArrowKeys</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -260,7 +260,7 @@
                     </settings.navigation.keybNav>
                     <settings.navigation.touchNav>
                         <TCEforms>
-                            <label>Touch-Navigation aktivieren</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.activateTouchNav</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -268,7 +268,7 @@
                     </settings.navigation.touchNav>
                     <settings.navigation.showBarTimer>
                         <TCEforms>
-                            <label>Fortschritts-Balken anzeigen</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.showBarTimer</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -276,7 +276,7 @@
                     </settings.navigation.showBarTimer>
                     <settings.navigation.showCircleTimer>
                         <TCEforms>
-                            <label>Fortschritts-Zirkel anzeigen</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.useCircleTimer</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -284,20 +284,20 @@
                     </settings.navigation.showCircleTimer>
                     <settings.navigation.thumbnailNavigation>
                         <TCEforms>
-                            <label>Thumbnail-Navigation aktivieren</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.thumbnailNav</label>
                             <config>
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="0" type="array">
-                                        <numIndex index="0">deaktiviert</numIndex>
+                                        <numIndex index="0">LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.thumbnail.disabled</numIndex>
                                         <numIndex index="1">deaktiviert</numIndex>
                                     </numIndex>
                                     <numIndex index="1" type="array">
-                                        <numIndex index="0">hover</numIndex>
+                                        <numIndex index="0">LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.thumbnail.hover</numIndex>
                                         <numIndex index="1">hover</numIndex>
                                     </numIndex>
                                     <numIndex index="2" type="array">
-                                        <numIndex index="0">aktiviert</numIndex>
+                                        <numIndex index="0">LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.thumbnail.always</numIndex>
                                         <numIndex index="1">aktiviert</numIndex>
                                     </numIndex>
                                 </items>
@@ -305,10 +305,10 @@
                                 <size>1</size>
                             </config>
                         </TCEforms>
-                    </settings.navigation.thumbnailNavigation>nailNavigation>
+                    </settings.navigation.thumbnailNavigation>
                     <settings.navigation.tnContainerWidth>
                         <TCEforms>
-                            <label>Breite des Thumnail-Containers (%)</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.thumbnailContainerWidth</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -316,7 +316,7 @@
                     </settings.navigation.tnContainerWidth>
                     <settings.navigation.tnWidth>
                         <TCEforms>
-                            <label>Thumbnail Breite (px)</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.thumbnailWidth</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -324,7 +324,7 @@
                     </settings.navigation.tnWidth>
                     <settings.navigation.tnHeight>
                         <TCEforms>
-                            <label>Tumbnail Höhe (px)</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.thumbnailHeight</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -332,7 +332,7 @@
                     </settings.navigation.tnHeight>
                     <settings.navigation.tnActiveOpacity>
                         <TCEforms>
-                            <label>Thumbnail Transparenz aktiv</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.thumbnailActOpacity</label>
                             <config>
                                 <type>input</type>
                                 <size>3</size>
@@ -341,7 +341,7 @@
                     </settings.navigation.tnActiveOpacity>
                     <settings.navigation.tnInactiveOpacity>
                         <TCEforms>
-                            <label>Thumbnail Transparenz inaktiv</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.thumbnailInactOpacity</label>
                             <config>
                                 <type>input</type>
                                 <size>3</size>
@@ -354,13 +354,13 @@
         <video>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>Video</sheetTitle>
+                    <sheetTitle>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.video</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
                     <settings.video.autoPlayVideo>
                         <TCEforms>
-                            <label>Video autoplay</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.autoplayVideo</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -368,20 +368,20 @@
                     </settings.video.autoPlayVideo>
                     <settings.video.autoPauseSlidshow>
                         <TCEforms>
-                            <label>Slideshow-Pause während Video</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.pauseSlideshowVideo</label>
                             <config>
                                 <type>select</type>
                                 <items type="array">
                                 <numIndex index="0" type="array">
-                                        <numIndex index="0">deaktiviert</numIndex>
+                                        <numIndex index="0">LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.pauseSlideshow.disabled</numIndex>
                                         <numIndex index="1">deaktiviert</numIndex>
                                     </numIndex>
                                 <numIndex index="1" type="array">
-                                    <numIndex index="0">auto</numIndex>
+                                    <numIndex index="0">LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.pauseSlideshow.auto</numIndex>
                                     <numIndex index="1">auto</numIndex>
                                 </numIndex>
                                 <numIndex index="2" type="array">
-                                    <numIndex index="0">aktiviert</numIndex>
+                                    <numIndex index="0">LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.pauseSlideshow.enabled</numIndex>
                                     <numIndex index="1">aktiviert</numIndex>
                                 </numIndex>
                             </items>
@@ -392,24 +392,24 @@
                     </settings.video.autoPauseSlidshow>
                     <settings.video.youtubePreview>
                         <TCEforms>
-                            <label>Video Preview</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.videoPreview</label>
                             <config>
                          <type>select</type>
                         <items type="array">
                             <numIndex index="0" type="array">
-                                <numIndex index="0">default</numIndex>
+                                <numIndex index="0">LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.videoPreview.default</numIndex>
                                 <numIndex index="1">default</numIndex>
                             </numIndex>
                             <numIndex index="1" type="array">
-                                <numIndex index="0">Medium Quality</numIndex>
+                                <numIndex index="0">LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.videoPreview.medQuality</numIndex>
                                 <numIndex index="1">Medium Quality</numIndex>
                             </numIndex>
                             <numIndex index="2" type="array">
-                                <numIndex index="0">High Quality</numIndex>
+                                <numIndex index="0">LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.videoPreview.hiQuality</numIndex>
                                 <numIndex index="1">High Quality</numIndex>
                             </numIndex>
                             <numIndex index="3" type="array">
-                                <numIndex index="0">Max Quality</numIndex>
+                                <numIndex index="0">LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.videoPreview.maxQuality</numIndex>
                                 <numIndex index="1">Max Quality</numIndex>
                             </numIndex>
                         </items>
@@ -424,13 +424,13 @@
         <image>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>Images</sheetTitle>
+                    <sheetTitle>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.images</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
                     <settings.image.imgPreload>
                         <TCEforms>
-                            <label>Images vorladen</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.preloadImages</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -438,7 +438,7 @@
                     </settings.image.imgPreload>
                     <settings.image.lazyLoad>
                         <TCEforms>
-                            <label>Images nur bei Bedarf laden</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.loadImagesOnlyWhenNeeded</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -450,17 +450,17 @@
         <logo>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>Logo</sheetTitle>
+                    <sheetTitle>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.logo</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
                     <settings.logo.yourLogo>
                         <TCEforms>
-                            <label>Logo</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.logo</label>
                         <config>
                             <type>group</type>
                             <internal_type>file</internal_type>
-                            <allowed>gif, jpg,jpeg,png</allowed>
+                            <allowed>gif,jpg,jpeg,png</allowed>
                             <max_size>10000</max_size>
                             <uploadfolder>uploads/tx_sglayerslider</uploadfolder>
                             <maxitems>1</maxitems>
@@ -472,7 +472,7 @@
                     </settings.logo.yourLogo>
                     <settings.logo.yourLogoStyle>
                         <TCEforms>
-                            <label>Logo Style</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.logoCssStyle</label>
                             <config>
                                 <type>input</type>
                                 <eval>trim</eval>
@@ -481,7 +481,7 @@
                     </settings.logo.yourLogoStyle>
                     <settings.logo.yourLogoLink>
                         <TCEforms>
-                            <label>Logo Link</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.logoLink</label>
                             <config>
                                 <type>input</type>
                                 <eval>trim</eval>
@@ -490,7 +490,7 @@
                     </settings.logo.yourLogoLink>
                     <settings.logo.yourLogoTarget>
                         <TCEforms>
-                            <label>Link-Target</label>
+                            <label>LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_be.xml:flexforms_template.logoLinkTarget</label>
                             <config>
                                 <type>select</type>
                                 <items type="array">

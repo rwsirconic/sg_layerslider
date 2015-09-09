@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider">
+		<header/>
+		<body>
+
+			<trans-unit id="flexforms_tab.slideshow" approved="no">
+				<source>Slideshow</source> <target state="needs-translation">Slideshow</target></trans-unit>
+			<trans-unit id="flexforms_template.selectSlideshow" approved="no">
+				<source>Select slideshow</source>
+			<target state="needs-translation">Slider wählen</target></trans-unit>
+			<trans-unit id="flexforms_template.autostart" approved="no">
+				<source>Autostart</source>
+			<target state="needs-translation">Autostart</target></trans-unit>
+			<trans-unit id="flexforms_template.pauseOnHover" approved="no">
+				<source>Pause on hover</source>
+			<target state="needs-translation">Pause bei Hover</target></trans-unit>
+			<trans-unit id="flexforms_template.firstSlideRandom" approved="no">
+				<source>First slide is random</source>
+			<target state="needs-translation">Erste Layer zufällig</target></trans-unit>
+			<trans-unit id="flexforms_template.animateFirstSlide" approved="no">
+				<source>Animate first slide</source>
+			<target state="needs-translation">Erster Layer animiert</target></trans-unit>
+			<trans-unit id="flexforms_template.numberOfLoops" approved="no">
+				<source>Number of loops</source>
+			<target state="needs-translation">Anzahl Durchläufe</target></trans-unit>
+			<trans-unit id="flexforms_template.forceLoopNumbers" approved="no">
+				<source>Force loop numbers (even if restarted)</source>
+			<target state="needs-translation">Durchläufe begrenzen</target></trans-unit>
+			<trans-unit id="flexforms_template.twoWaySlideshow" approved="no">
+				<source>Two way slideshow</source>
+			<target state="needs-translation">Bidirektional</target></trans-unit>
+			<trans-unit id="flexforms_template.randomSlideshow" approved="no">
+				<source>Random slideshow</source>
+			<target state="needs-translation">Zufällige Reihenfolge</target></trans-unit>
+
+			<trans-unit id="flexforms_tab.layout" approved="no">
+				<source>Layout</source>
+			<target state="needs-translation">Layout</target></trans-unit>
+			<trans-unit id="flexforms_template.layoutWidth" approved="no">
+				<source>Width (px/%)</source>
+			<target state="needs-translation">Breite (px/%)</target></trans-unit>
+			<trans-unit id="flexforms_template.layoutHeight" approved="no">
+				<source>Height (px/%)</source>
+			<target state="needs-translation">Höhe (px/%)</target></trans-unit>
+			<trans-unit id="flexforms_template.responsive" approved="no">
+				<source>Responsive</source>
+			<target state="needs-translation">Responsive</target></trans-unit>
+			<trans-unit id="flexforms_template.responsiveBelow" approved="no">
+				<source>Responsive only below (px)</source>
+			<target state="needs-translation">Responsive unter (px)</target></trans-unit>
+			<trans-unit id="flexforms_template.containerLayer" approved="no">
+				<source>Container for layer (0=off)</source>
+			<target state="needs-translation">Container für Layer (0=off)</target></trans-unit>
+			<trans-unit id="flexforms_template.layoutCssClass" approved="no">
+				<source>CSS class</source>
+			<target state="needs-translation">CSS-Klasse</target></trans-unit>
+
+			<trans-unit id="flexforms_tab.appearance" approved="no">
+				<source>Appearance</source>
+			<target state="needs-translation">Darstellung</target></trans-unit>
+			<trans-unit id="flexforms_template.globalBgColor" approved="no">
+				<source>Global background color (#rrggbb or color)</source>
+			<target state="needs-translation">Globale Hintergrundfarbe (#rrggbb oder Farbname)</target></trans-unit>
+			<trans-unit id="flexforms_template.globalBgImage" approved="no">
+				<source>Global background image</source>
+			<target state="needs-translation">Globales Hintergrundbild</target></trans-unit>
+			<trans-unit id="flexforms_template.skin" approved="no">
+				<source>Skin</source>
+			<target state="needs-translation">Container Skin</target></trans-unit>
+			<trans-unit id="flexforms_template.skinsPath" approved="no">
+				<source>Skins path</source>
+			<target state="needs-translation">Skin-Pfad</target></trans-unit>
+
+			<trans-unit id="flexforms_tab.navigation" approved="no">
+				<source>Navigation</source>
+			<target state="needs-translation">Navigation</target></trans-unit>
+			<trans-unit id="flexforms_template.showPreviousNextBtn" approved="no">
+				<source>Show Previous Next buttons</source>
+			<target state="needs-translation">Vorwärts-Rückwärts Buttons anzeigen</target></trans-unit>
+			<trans-unit id="flexforms_template.showStartStopBtn" approved="no">
+				<source>Show Start Stop buttons</source>
+			<target state="needs-translation">Start-Stop Buttons anzeigen</target></trans-unit>
+			<trans-unit id="flexforms_template.showNavBtn" approved="no">
+				<source>Show navigation buttons</source>
+			<target state="needs-translation">Navigations-Buttons anzeigen</target></trans-unit>
+			<trans-unit id="flexforms_template.hoverOverPrevNextBtn" approved="no">
+				<source>Hover over Previous Next buttons</source>
+			<target state="needs-translation">Hover auf Vorwärts-Rückwärts Buttons</target></trans-unit>
+			<trans-unit id="flexforms_template.hoverOverBtmNav" approved="no">
+				<source>Hover over bottom navigation</source>
+			<target state="needs-translation">Hover auf Fuss-Navigation</target></trans-unit>
+			<trans-unit id="flexforms_template.navigateSlidesArrowKeys" approved="no">
+				<source>Navigate slides using left and right arrow keys</source>
+			<target state="needs-translation">Navigation per Tastatur aktivieren</target></trans-unit>
+			<trans-unit id="flexforms_template.activateTouchNav" approved="no">
+				<source>Activate touch navigation</source>
+			<target state="needs-translation">Touch-Navigation aktivieren</target></trans-unit>
+			<trans-unit id="flexforms_template.showBarTimer" approved="no">
+				<source>Show the bar timer</source>
+			<target state="needs-translation">Fortschritts-Balken anzeigen</target></trans-unit>
+			<trans-unit id="flexforms_template.useCircleTimer" approved="no">
+				<source>Use circle timer</source>
+			<target state="needs-translation">Fortschritts-Zirkel anzeigen</target></trans-unit>
+			<trans-unit id="flexforms_template.thumbnailNav" approved="no">
+				<source>Thumbnail navigation</source>
+			<target state="needs-translation">Thumbnail-Navigation aktivieren</target></trans-unit>
+			<trans-unit id="flexforms_template.thumbnail.disabled" approved="no">
+				<source>disabled</source>
+			<target state="needs-translation">deaktiviert</target></trans-unit>
+			<trans-unit id="flexforms_template.thumbnail.hover" approved="no">
+				<source>hover</source>
+			<target state="needs-translation">hover</target></trans-unit>
+			<trans-unit id="flexforms_template.thumbnail.always" approved="no">
+				<source>always</source>
+			<target state="needs-translation">aktiviert</target></trans-unit>
+			<trans-unit id="flexforms_template.thumbnailContainerWidth" approved="no">
+				<source>Width of thumbnail container (%)</source> <target state="needs-translation">Breite des Thumnail-Containers (%)</target></trans-unit>
+			<trans-unit id="flexforms_template.thumbnailWidth" approved="no">
+				<source>Thumbnail width (px)</source> <target state="needs-translation">Thumbnail Breite (px)</target></trans-unit>
+			<trans-unit id="flexforms_template.thumbnailHeight" approved="no">
+				<source>Thumbnail height (px)</source> <target state="needs-translation">Thumbnail Höhe (px)</target></trans-unit>
+			<trans-unit id="flexforms_template.thumbnailActOpacity" approved="no">
+				<source>Thumbnail active opacity</source>
+			<target state="needs-translation">Thumbnail Transparenz aktiv</target></trans-unit>
+			<trans-unit id="flexforms_template.thumbnailInactOpacity" approved="no">
+				<source>Thumbnail inactive opacity</source>
+			<target state="needs-translation">Thumbnail Transparenz inaktiv</target></trans-unit>
+
+			<trans-unit id="flexforms_tab.video" approved="no">
+				<source>Video</source>
+			<target state="needs-translation">Video</target></trans-unit>
+			<trans-unit id="flexforms_template.autoplayVideo" approved="no">
+				<source>Autoplay video</source> <target state="needs-translation">Video autoplay</target></trans-unit>
+			<trans-unit id="flexforms_template.pauseSlideshowVideo" approved="no">
+				<source>Pause slideshow while playing video</source>
+			<target state="needs-translation">Slideshow-Pause während Video</target></trans-unit>
+			<trans-unit id="flexforms_template.pauseSlideshow.disabled" approved="no">
+				<source>disabled</source>
+			<target state="needs-translation">deaktiviert</target></trans-unit>
+			<trans-unit id="flexforms_template.pauseSlideshow.auto" approved="no">
+				<source>auto</source>
+			<target state="needs-translation">auto</target></trans-unit>
+			<trans-unit id="flexforms_template.pauseSlideshow.enabled" approved="no">
+				<source>enabled</source>
+			<target state="needs-translation">aktiviert</target></trans-unit>
+			<trans-unit id="flexforms_template.videoPreview" approved="no">
+				<source>Video Preview</source>
+			<target state="needs-translation">Video Preview</target></trans-unit>
+			<trans-unit id="flexforms_template.videoPreview.default" approved="no">
+				<source>default</source>
+			<target state="needs-translation">default</target></trans-unit>
+			<trans-unit id="flexforms_template.videoPreview.medQuality" approved="no">
+				<source>Medium Quality</source>
+			<target state="needs-translation">Medium Quality</target></trans-unit>
+			<trans-unit id="flexforms_template.videoPreview.hiQuality" approved="no">
+				<source>High Quality</source>
+			<target state="needs-translation">High Quality</target></trans-unit>
+			<trans-unit id="flexforms_template.videoPreview.maxQuality" approved="no">
+				<source>Max Quality</source>
+			<target state="needs-translation">Max Quality</target></trans-unit>
+
+			<trans-unit id="flexforms_tab.images" approved="no">
+				<source>Images</source>
+			<target state="needs-translation">Images</target></trans-unit>
+			<trans-unit id="flexforms_template.preloadImages" approved="no">
+				<source>Preload images</source>
+			<target state="needs-translation">Images vorladen</target></trans-unit>
+			<trans-unit id="flexforms_template.loadImagesOnlyWhenNeeded" approved="no">
+				<source>Load images only when needed (relies on preload)</source>
+			<target state="needs-translation">Images nur bei Bedarf laden</target></trans-unit>
+
+			<trans-unit id="flexforms_tab.logo" approved="no">
+				<source>Logo</source>
+			<target state="needs-translation">Logo</target></trans-unit>
+			<trans-unit id="flexforms_template.logo" approved="no">
+				<source>Logo</source>
+			<target state="needs-translation">Logo</target></trans-unit>
+			<trans-unit id="flexforms_template.logoCssStyle" approved="no">
+				<source>Logo CSS-style</source>
+			<target state="needs-translation">Logo Style</target></trans-unit>
+			<trans-unit id="flexforms_template.logoLink" approved="no">
+				<source>Logo link</source>
+			<target state="needs-translation">Logo Link</target></trans-unit>
+			<trans-unit id="flexforms_template.logoLinkTarget" approved="no">
+				<source>Link target</source>
+			<target state="needs-translation">Link-Target</target></trans-unit>
+
+		</body>
+	</file>
+</xliff>

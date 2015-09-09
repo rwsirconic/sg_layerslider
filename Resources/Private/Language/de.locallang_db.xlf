@@ -35,6 +35,9 @@
 			<trans-unit id="tx_sglayerslider_domain_model_layer.transition3d">
 				<source></source><target>3D-Effekt</target>
 			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.transition.all">
+				<source>All</source><target>Alle</target>
+			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_layer.deeplink">
 				<source></source><target>Deeplink-Name</target>
 			</trans-unit>
@@ -69,6 +72,9 @@
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.imgalt">
 				<source></source><target>Image Alttext</target>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.title">
+				<source></source><target>Title</target>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.elementtext">
 				<source></source><target>Elementtext</target>
@@ -114,6 +120,15 @@
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.mediatype">
 				<source></source><target>Linktyp Media</target>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.mediatype.nomedia">
+				<source></source><target>-- keine Medien --</target>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.mediatype.video">
+				<source></source><target>Video (opt. selfhosted)</target>
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.mediatype.audio">
+				<source></source><target>Audio (opt. selfhosted)</target>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.parallax">
 				<source></source><target>Parallaxen-Ebene</target>
@@ -162,7 +177,8 @@
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.header.transform">
 				<source></source><target>Transformations-Ursprung (%/px) x y z</target>
-			</trans-unit><trans-unit id="tx_sglayerslider_domain_model_element.textwrap">
+			</trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.textwrap">
 				<source></source><target>automatischer Zeilenumbruch</target>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.offsetxin">
@@ -183,10 +199,10 @@
 			<trans-unit id="tx_sglayerslider_domain_model_element.offsetyout">
 				<source></source><target>Ausblenden Y</target>
 			</trans-unit>
-			<trans-unit id="tx_sglayerslider_domain_model_element.transformin">
+			<trans-unit id="tx_sglayerslider_domain_model_element.transformoriginin">
 				<source></source><target>Einblenden</target>
 			</trans-unit>
-			<trans-unit id="tx_sglayerslider_domain_model_element.transformout">
+			<trans-unit id="tx_sglayerslider_domain_model_element.transformoriginout">
 				<source></source><target>Ausblenden</target>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.fadein">

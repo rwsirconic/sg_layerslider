@@ -135,7 +135,7 @@ $TCA['tx_sglayerslider_domain_model_layer'] = array(
 			'config' => array(
                 'type' => 'select',
                 'items' => array(
-                    array('Alle',0),
+                    array('LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_layer.transition.all',0),
                     array('Spinning tile to right (180°)',1),
                     array('Spinning tile to left (180°)',2),
                     array('Spinning tile to bottom (180°)',3),
@@ -248,7 +248,7 @@ $TCA['tx_sglayerslider_domain_model_layer'] = array(
             'config' => array(
                 'type' => 'select',
                 'items' => array(
-                    array('Alle',0),
+                    array('LLL:EXT:sg_layerslider/Resources/Private/Language/locallang_db.xlf:tx_sglayerslider_domain_model_layer.transition.all',0),
                     array('Sliding from right',1),
                     array('Sliding from left',2),
                     array('Sliding from bottom',3),
