@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider" target-language="de">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_sglayerslider_domain_model_slider" approved="no">
+				<source>Slider</source><target state="needs-translation">Slider</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_slider.title" approved="no">
+				<source>Slider title</source><target state="needs-translation">Titel des Sliders</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_slider.description" approved="no">
+				<source>Slider description</source><target state="needs-translation">Beschreibung des Sliders</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_slider.layers" approved="no">
+				<source>Slider layer</source> <target state="needs-translation">Layer des Sliders</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer" approved="no">
+				<source>Layers within the slider</source> <target state="needs-translation">Layer innerhalb eines Sliders</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.title" approved="no">
+				<source>Element title</source> <target state="needs-translation">Titel des Elements</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.slidedelay" approved="no">
+				<source>Slide delay</source> <target state="needs-translation">Slidezeit</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.transition2d" approved="no">
+				<source>2D transition</source> <target state="needs-translation">2D-Effekt</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.transition3d" approved="no">
+				<source>3D transition</source> <target state="needs-translation">3D-Effekt</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.timeshift" approved="no">
+				<source>Timeshift</source> <target state="needs-translation">Zeitverzögerung</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.deeplink" approved="no">
+				<source>Deep link</source> <target state="needs-translation">Link-Ziel</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_layer.elements" approved="no">
+				<source>Layer element</source> <target state="needs-translation">Elemente des Layers</target></trans-unit>
+			
+			<trans-unit id="tx_sglayerslider_domain_model_element" approved="no">
+				<source>Layer element</source> <target state="needs-translation">Element eines Layers</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.title" approved="no">
+				<source>Element title</source> <target state="needs-translation">Element-Titel</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.elementtext" approved="no">
+				<source>Element text</source> <target state="needs-translation">Element-Text</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.image" approved="no">
+				<source>Element image</source> <target state="needs-translation">Element-Bild</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.borderleft" approved="no">
+				<source>Border left</source> <target state="needs-translation">Rand links</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.bordertop" approved="no">
+				<source>Border top</source> <target state="needs-translation">Rand oben</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.elementhight" approved="no">
+				<source>Element height</source> <target state="needs-translation">Höhe des Elements</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.textcolor" approved="no">
+				<source>Text color</source> <target state="needs-translation">Schriftfarbe</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.slidedirin" approved="no">
+				<source>Transition direction in</source> <target state="needs-translation">Effektrichtung einblenden</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.slidedirout" approved="no">
+				<source>Transition direction out</source> <target state="needs-translation">Effektrichtung ausblenden</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.durationin" approved="no">
+				<source>Transition duration in</source> <target state="needs-translation">Effektdauer einblenden</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.durationout" approved="no">
+				<source>Transition duration out</source> <target state="needs-translation">Effektdauer ausblenden</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.delayin" approved="no">
+				<source>Delay in</source> <target state="needs-translation">Verzögerung einblenden</target></trans-unit>
+			<trans-unit id="tx_sglayerslider_domain_model_element.delayout" approved="no">
+				<source>Delay out</source> <target state="needs-translation">Verzögerung ausblenden</target></trans-unit>
+			
+		</body>
+	</file>
+</xliff>

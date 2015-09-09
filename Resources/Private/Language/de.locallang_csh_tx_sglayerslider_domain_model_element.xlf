@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider">
+		<header/>
+		<body>
+
+			<trans-unit id="title.description" approved="no">
+				<source>Element title</source> <target state="needs-translation">Element-Titel</target></trans-unit>
+			<trans-unit id="elementtext.description" approved="no">
+				<source>Element text</source> <target state="needs-translation">Element-Text</target></trans-unit>
+			<trans-unit id="image.description" approved="no">
+				<source>Element image</source> <target state="needs-translation">Element-Bild</target></trans-unit>
+			<trans-unit id="borderleft.description" approved="no">
+				<source>Border left</source> <target state="needs-translation">Rand links</target></trans-unit>
+			<trans-unit id="bordertop.description" approved="no">
+				<source>Border top</source> <target state="needs-translation">Rand oben</target></trans-unit>
+			<trans-unit id="elementhight.description" approved="no">
+				<source>Element height</source> <target state="needs-translation">Höhe des Elements</target></trans-unit>
+			<trans-unit id="textcolor.description" approved="no">
+				<source>Text color</source> <target state="needs-translation">Schriftfarbe</target></trans-unit>
+			<trans-unit id="slidedirin.description" approved="no">
+				<source>Transition direction in</source> <target state="needs-translation">Effektrichtung einblenden</target></trans-unit>
+			<trans-unit id="slidedirout.description" approved="no">
+				<source>Transition direction out</source> <target state="needs-translation">Effektrichtung ausblenden</target></trans-unit>
+			<trans-unit id="durationin.description" approved="no">
+				<source>Transition duration in</source> <target state="needs-translation">Effektdauer einblenden</target></trans-unit>
+			<trans-unit id="durationout.description" approved="no">
+				<source>Transition duration out</source> <target state="needs-translation">Effektdauer ausblenden</target></trans-unit>
+			<trans-unit id="delayin.description" approved="no">
+				<source>Transition delay in</source> <target state="needs-translation">Verzögerung einblenden</target></trans-unit>
+			<trans-unit id="delayout.description" approved="no">
+				<source>Transition delay out</source> <target state="needs-translation">Verzögerung ausblenden</target></trans-unit>
+		</body>
+	</file>
+</xliff>

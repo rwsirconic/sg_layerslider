@@ -5,13 +5,13 @@
 		<body>
 
 			<trans-unit id="title.description">
-				<source>Titel des Sliders</source>
+				<source>Slider title</source>
 			</trans-unit>
 			<trans-unit id="description.description">
-				<source>Beschreibung des Sliders</source>
+				<source>Description of the slider</source>
 			</trans-unit>
 			<trans-unit id="layers.description">
-				<source>Layer des Sliders</source>
+				<source>Slider layers</source>
 			</trans-unit>
 		</body>
 	</file>

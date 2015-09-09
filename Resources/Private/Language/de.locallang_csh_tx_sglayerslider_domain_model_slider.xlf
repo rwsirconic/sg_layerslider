@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider" target-language="de">
+		<header/>
+		<body>
+
+			<trans-unit id="title.description" approved="no">
+				<source>Slider title</source> <target state="needs-translation">Titel des Sliders</target></trans-unit>
+			<trans-unit id="description.description" approved="no">
+				<source>Description of the slider</source> <target state="needs-translation">Beschreibung des Sliders</target></trans-unit>
+			<trans-unit id="layers.description" approved="no">
+				<source>Slider layers</source> <target state="needs-translation">Layer des Sliders</target></trans-unit>
+		</body>
+	</file>
+</xliff>

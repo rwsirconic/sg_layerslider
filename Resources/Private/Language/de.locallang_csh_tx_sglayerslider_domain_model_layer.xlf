@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider">
+		<header/>
+		<body>
+
+			<trans-unit id="title.description" approved="yes">
+				<source>Element title</source> <target state="translated">Titel des Elements</target></trans-unit>
+			<trans-unit id="transition2d.description" approved="yes">
+				<source>2D transition</source> <target state="translated">2D-Effekte</target></trans-unit>
+			<trans-unit id="transition3d.description" approved="yes">
+				<source>3D transition</source> <target state="translated">3D-Effekte</target></trans-unit>
+			<trans-unit id="deeplink.description" approved="yes">
+				<source>Deeplink</source> <target state="translated">Linkziel</target></trans-unit>
+			<trans-unit id="timeshift.description" approved="yes">
+				<source>Timeshift</source> <target state="translated">Verzögerung</target></trans-unit>
+			<trans-unit id="slidedelay.description" approved="yes">
+				<source>Slide delay</source> <target state="translated">Anzeigedauer</target></trans-unit>
+		</body>
+	</file>
+</xliff>

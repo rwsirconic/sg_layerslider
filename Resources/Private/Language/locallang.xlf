@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <xliff version="1.0">
 	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-24T10:15:22Z" product-name="sg_layerslider">
 		<header/>
@@ -8,81 +8,79 @@
 				<source>Slider</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_slider.title">
-				<source>Titel des Sliders</source>
+				<source>Slider title</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_slider.description">
-				<source>Beschreibung des Sliders</source>
+				<source>Slider description</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_slider.layers">
-				<source>Layer des Sliders</source>
+				<source>Slider layer</source>
 			</trans-unit>
-			
 			<trans-unit id="tx_sglayerslider_domain_model_layer">
-				<source>Layer innerhalb eines Sliders</source>
+				<source>Layers within the slider</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_layer.title">
-				<source>Titel des Elements</source>
+				<source>Element title</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_layer.slidedelay">
-				<source>Slidezeit</source>
+				<source>Slide delay</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_layer.transition2d">
-				<source>2D-Effekt</source>
+				<source>2D transition</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_layer.transition3d">
-				<source>3D-Effekt</source>
+				<source>3D transition</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_layer.timeshift">
-				<source>Zeitverzögerung</source>
+				<source>Timeshift</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_layer.deeplink">
-				<source>Link-Ziel</source>
+				<source>Deep link</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_layer.elements">
-				<source>Elemente des Layers</source>
+				<source>Layer elements</source>
 			</trans-unit>
-			
 			<trans-unit id="tx_sglayerslider_domain_model_element">
-				<source>Element eines Layers</source>
+				<source>Layer element</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.title">
-				<source>Element-Titel</source>
+				<source>Element title</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.elementtext">
-				<source>Element-Text</source>
+				<source>Element text</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.image">
-				<source>Element-Bild</source>
+				<source>Element image</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.borderleft">
-				<source>Rand links</source>
+				<source>Border left</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.bordertop">
-				<source>Rand oben</source>
+				<source>Border top</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.elementhight">
-				<source>Höhe des Elements</source>
+				<source>Element height</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.textcolor">
-				<source>Schriftfarbe</source>
+				<source>Text color</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.slidedirin">
-				<source>Effektrichtung einblenden</source>
+				<source>Transition direction in</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.slidedirout">
-				<source>Effektrichtung ausblenden</source>
+				<source>Transition direction out</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.durationin">
-				<source>Effektdauer einblenden</source>
+				<source>Transition duration in</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.durationout">
-				<source>Effektdauer ausblenden</source>
+				<source>Transition duration out</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.delayin">
-				<source>Verzögerung einblenden</source>
+				<source>Delay in</source>
 			</trans-unit>
 			<trans-unit id="tx_sglayerslider_domain_model_element.delayout">
-				<source>Verzögerung ausblenden</source>
+				<source>Delay out</source>
 			</trans-unit>
 			
 		</body>

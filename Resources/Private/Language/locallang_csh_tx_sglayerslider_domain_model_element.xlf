@@ -5,43 +5,43 @@
 		<body>
 
 			<trans-unit id="title.description">
-				<source>Element-Titel</source>
+				<source>Element title</source>
 			</trans-unit>
 			<trans-unit id="elementtext.description">
-				<source>Element-Text</source>
+				<source>Element text</source>
 			</trans-unit>
 			<trans-unit id="image.description">
-				<source>Element-Bild</source>
+				<source>Element image</source>
 			</trans-unit>
 			<trans-unit id="borderleft.description">
-				<source>Rand links</source>
+				<source>Border left</source>
 			</trans-unit>
 			<trans-unit id="bordertop.description">
-				<source>Rand oben</source>
+				<source>Border top</source>
 			</trans-unit>
 			<trans-unit id="elementhight.description">
-				<source>Höhe des Elements</source>
+				<source>Element height</source>
 			</trans-unit>
 			<trans-unit id="textcolor.description">
-				<source>Schriftfarbe</source>
+				<source>Text color</source>
 			</trans-unit>
 			<trans-unit id="slidedirin.description">
-				<source>Effektrichtung einblenden</source>
+				<source>Transition direction in</source>
 			</trans-unit>
 			<trans-unit id="slidedirout.description">
-				<source>Effektrichtung ausblenden</source>
+				<source>Transition direction out</source>
 			</trans-unit>
 			<trans-unit id="durationin.description">
-				<source>Effektdauer einblenden</source>
+				<source>Transition duration in</source>
 			</trans-unit>
 			<trans-unit id="durationout.description">
-				<source>Effektdauer ausblenden</source>
+				<source>Transition duration out</source>
 			</trans-unit>
 			<trans-unit id="delayin.description">
-				<source>Verzögerung einblenden</source>
+				<source>Transition delay in</source>
 			</trans-unit>
 			<trans-unit id="delayout.description">
-				<source>Verzögerung ausblenden</source>
+				<source>Transition delay out</source>
 			</trans-unit>
 		</body>
 	</file>
