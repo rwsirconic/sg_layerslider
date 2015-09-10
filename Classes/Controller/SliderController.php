@@ -91,9 +91,9 @@ class SliderController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
             $sliderconfig['forceLoopNum']='false';
         }
         if ($this->settings['slider']['towWaySlideshow']==1) {
-            $sliderconfig['towWaySlideshow']='true';
+            $sliderconfig['twoWaySlideshow']='true';
         }else{
-            $sliderconfig['towWaySlideshow']='false';
+            $sliderconfig['twoWaySlideshow']='false';
         }
         if ($this->settings['slider']['randomSlideshow']==1) {
             $sliderconfig['randomSlideshow']='true';
